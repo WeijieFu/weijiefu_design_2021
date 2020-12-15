@@ -240,7 +240,7 @@ varying float qnoise;
       g = cos(qnoise - 0.5);
       b = 0.0;
     } else {
-      r = cos(qnoise + 0.5)*0.3;
+      r = cos(qnoise + 0.5)*0.8;
       g = cos(qnoise - 0.5);
       b = abs(qnoise);
     }
@@ -265,7 +265,7 @@ class SceneInit {
               vel: 0.002,
               speed: 0.00050,
               perlins: 1.0,
-              decay: 0.03,
+              decay: 0.05,
               complex: 0.30,
               waves: 20.0,
               eqcolor: 11.0,
@@ -305,7 +305,9 @@ class SceneInit {
         this.renderer.setSize(this.width, this.height);
         
         this.root.appendChild(this.renderer.domElement);
+
         window.addEventListener('resize', this.onWindowResize.bind(this), false);
+        window.addEventListener('mousewheel', this.onWindowScroll.bind(this));
     }
 
     onWindowResize() {
@@ -316,6 +318,14 @@ class SceneInit {
         this.camera.updateProjectionMatrix();
     }
 
+    onWindowScroll(e) {
+        if(e.deltaY > 0){
+            this.options.perlin.decay = 0.5;
+        }else{
+            this.options.perlin.decay = 0.05;
+        }
+        
+    }
 
     createPrimitive(){
         let that = this;
