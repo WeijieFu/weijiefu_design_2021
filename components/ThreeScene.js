@@ -240,7 +240,7 @@ varying float qnoise;
       g = cos(qnoise - 0.5);
       b = 0.0;
     } else {
-      r = cos(qnoise + 0.5);
+      r = cos(qnoise + 0.5)*0.3;
       g = cos(qnoise - 0.5);
       b = abs(qnoise);
     }
