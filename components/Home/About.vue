@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="about" id="about">
         THIS IS ABOUT
     </div>
 </template>
@@ -14,5 +14,6 @@ export default {
         color: red;
         width: 100vw;
         height: 100vh;
+
     }
 </style>

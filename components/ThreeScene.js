@@ -240,7 +240,7 @@ varying float qnoise;
       g = cos(qnoise - 0.5);
       b = 0.0;
     } else {
-      r = cos(qnoise + 0.5)*0.8;
+      r = cos(qnoise + 0.5)*0.5;
       g = cos(qnoise - 0.5);
       b = abs(qnoise);
     }
@@ -253,30 +253,14 @@ varying float qnoise;
 ///////
 
 class SceneInit {
-    constructor(rootEl){
+    constructor(rootEl, options){
         this.root = rootEl;
         this.width = rootEl.clientWidth;
         this.height = rootEl.clientHeight;
         this.background = 0x000000;
         this.start = Date.now();
 
-        this.options = {
-            perlin: {
-              vel: 0.002,
-              speed: 0.00050,
-              perlins: 1.0,
-              decay: 0.05,
-              complex: 0.30,
-              waves: 20.0,
-              eqcolor: 11.0,
-              fragment: true,
-              redhell: true
-            },
-            spin: {
-              sinVel: 0.0,
-              ampVel: 80.0,
-            }
-          }
+        this.options = options;
 
 
         this.init();
@@ -307,7 +291,7 @@ class SceneInit {
         this.root.appendChild(this.renderer.domElement);
 
         window.addEventListener('resize', this.onWindowResize.bind(this), false);
-        window.addEventListener('mousewheel', this.onWindowScroll.bind(this));
+
     }
 
     onWindowResize() {
@@ -318,14 +302,7 @@ class SceneInit {
         this.camera.updateProjectionMatrix();
     }
 
-    onWindowScroll(e) {
-        if(e.deltaY > 0){
-            this.options.perlin.decay = 0.5;
-        }else{
-            this.options.perlin.decay = 0.05;
-        }
-        
-    }
+   
 
     createPrimitive(){
         let that = this;
@@ -409,6 +386,6 @@ class SceneInit {
     
 }
 
-const sceneInit = args => new SceneInit(args);
+const sceneInit = (rootEl, options) => new SceneInit(rootEl, options);
 
 export default sceneInit;

@@ -3,15 +3,28 @@
         <svg  class="start_line" height="7rem" width="5rem">
             <line x1="2.5rem" y1="0" x2="2.5rem" y2="7rem" />
         </svg>
-        <svg height="5rem" width="5rem" class="start_circle">
-                <circle cx="2.5rem" cy="2.5rem" r="1rem" />
+        
+        <svg height="2rem" width="2rem" class="start_circle" @click="onClick">
+            <a href="#" v-scroll-to="'#about'">
+                <circle cx="1rem" cy="1rem" r="1rem" />
+            </a>
         </svg>
-
+      
+        
     </div>
 </template>
 <script>
 export default {
-    
+    data(){
+        return{
+            showNav: false,
+        }
+    },
+    methods:{
+        onClick(){
+            
+        }
+    }
 }
 </script>
 <style scoped>
@@ -32,6 +45,7 @@ export default {
     fill: var(--color-text-grey);
     stroke-width: 2px;
     transition: all 0.2s ease-out;
+    margin-top: 1rem;
 }
 
 .start_circle:hover {
@@ -45,6 +59,8 @@ export default {
     stroke-dashoffset: 14rem;
     animation: start 1.5s ease-out 0s infinite;
 }
+
+
 
 @keyframes start {
     0%{

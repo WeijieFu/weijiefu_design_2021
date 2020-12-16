@@ -1,6 +1,6 @@
 <template>
-    <div class="contact">
-        THIS IS WORK
+    <div class="contact" id="contact">
+        THIS IS CONTACT
     </div>
 </template>
 <script>

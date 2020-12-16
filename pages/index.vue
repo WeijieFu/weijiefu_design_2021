@@ -5,6 +5,7 @@
     <About />
     <Work />
     <Contact />
+    <Nav/>
 
     
 
@@ -18,6 +19,7 @@ import ThreeScene from '@/components/ThreeScene.vue';
 import Header from '@/components/Home/Header.vue';
 import About from '@/components/Home/About.vue';
 import Contact from '@/components/Home/Contact.vue';
+import Nav from '@/components/Home/Nav.vue';
 
 
 
@@ -28,7 +30,9 @@ export default {
     ThreeScene,
     Header,
     About,
-    Contact
+    Contact,
+    Nav,
+
 
 
   }
