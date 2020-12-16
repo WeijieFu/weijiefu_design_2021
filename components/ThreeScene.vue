@@ -9,16 +9,9 @@
 import sceneInit from '@/components/ThreeScene.js';
 
 export default {
-
-
-
-
-
-
      mounted(){
         this.root = document.querySelector('.canvas');
         sceneInit(this.root);
-        
     },
 }
 
