@@ -55,7 +55,7 @@ export default {
        color: var(--color-text-grey);
    }
    .nav_:hover > .nav_link{
-       cursor: pointer;
+
        color:#fff
    }
 

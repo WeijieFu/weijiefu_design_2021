@@ -9,6 +9,8 @@
       <Nav v-show="showNav" />
     </transition>
     <Footer/>
+    <Mouse/>
+    <Light/>
    
 
       
@@ -23,6 +25,9 @@ import About from '@/components/Home/About.vue';
 import Contact from '@/components/Home/Contact.vue';
 import Nav from '@/components/Home/Nav.vue';
 import Footer from '@/components/Home/Footer.vue';
+import Mouse from '@/components/Mouse.vue';
+
+import Light from '../components/Light.vue';
 
 
 
@@ -48,9 +53,14 @@ export default {
     Contact,
     Nav,
     Footer,
+    Mouse,
+    Light   
+
   },
 
-  mounted(){
+ 
+
+   mounted(){
     window.addEventListener('scroll', this.toShowNav);
   },
   methods:{
