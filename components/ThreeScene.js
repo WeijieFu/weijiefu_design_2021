@@ -325,7 +325,9 @@ class SceneInit {
       //     ()=>{
       //       if(Math.abs(this.options.perlin.decay-0.01)>0.01){
       //         this.options.perlin.decay *= (this.options.perlin.decay-0.01)>0? 0.99: 1.01;
-      //         this.options.perlin.waves *= (this.options.perlin.waves-20)>0? 0.9: 1.1;
+      //         if(this.options.perlin.waves != 20){
+      //           this.options.perlin.waves =20
+      //         }
       //       }else{
       //         clearInterval(smooth);
       //       }
@@ -339,8 +341,10 @@ class SceneInit {
       let smooth = setInterval(
         ()=>{
           if(Math.abs(this.options.perlin.decay-0.2)>0.01){
-            this.options.perlin.decay *= (this.options.perlin.decay-0.2)>0? 0.99: 1.01;
-            this.options.perlin.waves *= (this.options.perlin.waves-20)>0? 0.9: 1.1;
+              this.options.perlin.decay *= (this.options.perlin.decay-0.2)>0? 0.99: 1.01;
+              if(this.options.perlin.waves != 20){
+                this.options.perlin.waves =20
+              }
           }else{
             clearInterval(smooth);
           }
@@ -351,8 +355,10 @@ class SceneInit {
       let smooth = setInterval(
         ()=>{
           if(Math.abs(this.options.perlin.decay-0.6)>0.01){
-            this.options.perlin.decay *= (this.options.perlin.decay-0.6)>0? 0.99: 1.01;
-            this.options.perlin.waves *= (this.options.perlin.waves-20)>0? 0.9: 1.1;
+              this.options.perlin.decay *= (this.options.perlin.decay-0.6)>0? 0.99: 1.01;
+              if(this.options.perlin.waves != 20){
+                this.options.perlin.waves =20
+              }
           }else{
             clearInterval(smooth);
           }
@@ -363,9 +369,13 @@ class SceneInit {
       let smooth = setInterval(
         ()=>{
           if(Math.abs(this.options.perlin.decay-0.9)>0.01){
-            if(Math.abs(this.options.perlin.waves-4)>0.01)
-            this.options.perlin.decay *= (this.options.perlin.decay-0.9)>0? 0.99: 1.01;
-            this.options.perlin.waves *= (this.options.perlin.waves-4)>0? 0.9: 1.1;
+       
+              this.options.perlin.decay *= (this.options.perlin.decay-0.9)>0? 0.99: 1.01;
+              if(this.options.perlin.waves != 4){
+                this.options.perlin.waves =4
+              }
+            
+           
           }else{
             clearInterval(smooth);
           }
