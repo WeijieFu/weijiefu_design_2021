@@ -49,6 +49,7 @@ export default {
     transform-origin: center;
     transform: translate(-50%, -50%) scale(3);
     pointer-events: none;
+    transition: all 0.5s ease-out;
     
 }
 

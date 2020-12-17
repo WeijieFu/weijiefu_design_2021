@@ -2,7 +2,7 @@
     <div class="mouse" :style="{ left: x +'px', top: y + 'px'}">
        
             <svg height="150" width="150">
-                <circle cx="75" cy="75" r="75"  />
+                <rect width="150" height="150"  />
             </svg>
       
         
@@ -42,11 +42,25 @@ export default {
     transform-origin: center;
     transform: translate(-50%, -50%) scale(0.1);
     pointer-events: none;
+    animation-name: square;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    
 }
 .mouse svg{
     fill: #fff;
 }
 
-
+@keyframes square {
+    0%{
+        transform: translate(-50%, -50%) scale(0.1) rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -50%) scale(0.1) rotate(360deg);
+    }
+    
+}
 
 </style>
