@@ -10,32 +10,33 @@ import sceneInit from '@/components/ThreeScene.js';
 
 export default {
     data(){
-      return {
+      return{
         options: {
-            perlin: {
-              vel: 0.002,
-              speed: 0.00050,
-              perlins: 1.0,
-              decay: 0.5,
-              complex: 1.0,
-              waves: 20.0,
-              eqcolor: 11.0,
-              fragment: true,
-              redhell: true
-            },
-            spin: {
-              sinVel: 0.0,
-              ampVel: 80.0,
-            }
+          perlin: {
+            vel: 0.002,
+            speed: 0.00050,
+            perlins: 1.0,
+            decay: 0.01,
+            complex: 0.1,
+            waves: 20.0,
+            eqcolor: 11.0,
+            fragment: true,
+            redhell: true
+          },
+          spin: {
+            sinVel: 0.0,
+            ampVel: 80.0,
           }
+        }
       }
     },
      mounted(){
         this.root = document.querySelector('.canvas');
-        
-        // console.log(this.options);
         sceneInit(this.root, this.options);
     },
+
+
+  
 }
 
 

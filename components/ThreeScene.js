@@ -261,9 +261,20 @@ class SceneInit {
         this.start = Date.now();
 
         this.options = options;
+        this.scrollPosition = 0;
+
+        this.aboutPosition = document.getElementById('about').getBoundingClientRect().top;
+        this.workPosition = document.getElementById('work').getBoundingClientRect().top;
+        this.contactPosition = document.getElementById('contact').getBoundingClientRect().top;
+
+        this.aboutPositionEnd = document.getElementById('about').getBoundingClientRect().bottom;
+        this.workPositionEnd = document.getElementById('work').getBoundingClientRect().bottom;
+        this.contactPositionEnd = document.getElementById('contact').getBoundingClientRect().bottom;
+        this.headerPositionEnd = document.getElementById('header').getBoundingClientRect().bottom;
 
 
         this.init();
+        
 
     }
 
@@ -291,9 +302,12 @@ class SceneInit {
         this.root.appendChild(this.renderer.domElement);
 
         window.addEventListener('resize', this.onWindowResize.bind(this), false);
+        // window.addEventListener('wheel', this.onWindowScroll.bind(this), false);
+        window.addEventListener('scroll', this.onWindowScroll.bind(this), false);
+
 
     }
-
+  
     onWindowResize() {
         this.width = this.root.clientWidth;
         this.height = this.root.clientHeight;
@@ -302,7 +316,68 @@ class SceneInit {
         this.camera.updateProjectionMatrix();
     }
 
-   
+   onWindowScroll(){
+      this.scrollPosition = window.scrollY;
+      console.log(this.scrollPosition, this.aboutPosition);
+
+      // if(this.scrollPosition >= 0 && this.scrollPosition < this.headerPositionEnd){
+      //   let smooth = setInterval(
+      //     ()=>{
+      //       if(Math.abs(this.options.perlin.decay-0.01)>0.01){
+      //         this.options.perlin.decay *= (this.options.perlin.decay-0.01)>0? 0.99: 1.01;
+      //         this.options.perlin.waves *= (this.options.perlin.waves-20)>0? 0.9: 1.1;
+      //       }else{
+      //         clearInterval(smooth);
+      //       }
+      //     }, 0.17
+      //   )
+      // }
+
+
+
+    if(this.scrollPosition >= this.aboutPosition-60 && this.scrollPosition < this.aboutPositionEnd){
+      let smooth = setInterval(
+        ()=>{
+          if(Math.abs(this.options.perlin.decay-0.2)>0.01){
+            this.options.perlin.decay *= (this.options.perlin.decay-0.2)>0? 0.99: 1.01;
+            this.options.perlin.waves *= (this.options.perlin.waves-20)>0? 0.9: 1.1;
+          }else{
+            clearInterval(smooth);
+          }
+        }, 0.17
+      )
+    }
+    if(this.scrollPosition >= this.workPosition-60 && this.scrollPosition < this.workPositionEnd){
+      let smooth = setInterval(
+        ()=>{
+          if(Math.abs(this.options.perlin.decay-0.6)>0.01){
+            this.options.perlin.decay *= (this.options.perlin.decay-0.6)>0? 0.99: 1.01;
+            this.options.perlin.waves *= (this.options.perlin.waves-20)>0? 0.9: 1.1;
+          }else{
+            clearInterval(smooth);
+          }
+        }, 0.17
+      )
+    }
+    if(this.scrollPosition >= this.contactPosition-60){
+      let smooth = setInterval(
+        ()=>{
+          if(Math.abs(this.options.perlin.decay-0.9)>0.01){
+            if(Math.abs(this.options.perlin.waves-4)>0.01)
+            this.options.perlin.decay *= (this.options.perlin.decay-0.9)>0? 0.99: 1.01;
+            this.options.perlin.waves *= (this.options.perlin.waves-4)>0? 0.9: 1.1;
+          }else{
+            clearInterval(smooth);
+          }
+        }, 0.17
+      )
+    }
+    
+
+
+
+
+   }
 
     createPrimitive(){
         let that = this;

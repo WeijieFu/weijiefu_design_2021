@@ -7,14 +7,14 @@
             
             <a class="nav_link" href="#" v-scroll-to="'#about'">ABOUT</a>
         </div>
-         <div class="nav_">
+         <div class="nav_" >
             <svg height="10" width="10" class="nav_circle">
                  <polygon points="0,10 10,10 10,0"  />
             </svg>
             
             <a class="nav_link" href="#" v-scroll-to="'#work'">WORK</a>
         </div>
-         <div class="nav_">
+         <div class="nav_" >
             <svg height="10" width="10" class="nav_circle">
                  <polygon points="0,10 10,10 10,0"  />
             </svg>
@@ -25,7 +25,7 @@
 </template>
 <script>
 export default {
-    
+  
 }
 </script>
 <style scoped>

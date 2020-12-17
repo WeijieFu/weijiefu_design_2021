@@ -1,5 +1,5 @@
 <template>
-    <div class="header">
+    <div class="header" id="header">
         <div class="title">
             <div class="title_fill">
                 <svg width="529" height="112" viewBox="0 0 529 112" fill="none" xmlns="http://www.w3.org/2000/svg">

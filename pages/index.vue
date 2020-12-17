@@ -28,10 +28,15 @@ import Footer from '@/components/Home/Footer.vue';
 
 
 export default {
+  data(){
+    return {
+      scrollPosition: 0,
+      innerHeight: 0,
+    }
+  },
   computed:{
     showNav(){
       return this.$store.state.showNav;
-      
     },
   },
   
@@ -43,21 +48,18 @@ export default {
     Contact,
     Nav,
     Footer,
-
-
-
-  }
+  },
 }
 </script>
 
 <style>
-/* .console{
+.console{
   position: fixed;
   top: 0;
   left: 0;
   color: red;
   z-index: 9999;
-} */
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;
