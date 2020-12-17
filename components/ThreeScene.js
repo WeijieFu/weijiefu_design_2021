@@ -320,20 +320,20 @@ class SceneInit {
       this.scrollPosition = window.scrollY;
 
 
-      // if(this.scrollPosition >= 0 && this.scrollPosition < this.headerPositionEnd){
-      //   let smooth = setInterval(
-      //     ()=>{
-      //       if(Math.abs(this.options.perlin.decay-0.01)>0.01){
-      //         this.options.perlin.decay *= (this.options.perlin.decay-0.01)>0? 0.99: 1.01;
-      //         if(this.options.perlin.waves != 20){
-      //           this.options.perlin.waves =20
-      //         }
-      //       }else{
-      //         clearInterval(smooth);
-      //       }
-      //     }, 0.17
-      //   )
-      // }
+      if(this.scrollPosition >= 0 && this.scrollPosition < this.headerPositionEnd){
+        let smooth = setInterval(
+          ()=>{
+            if(Math.abs(this.options.perlin.decay-0.01)>0.001){
+              this.options.perlin.decay *= (this.options.perlin.decay-0.01)>0? 0.99: 1.01;
+              if(this.options.perlin.waves != 20){
+                this.options.perlin.waves =20
+              }
+            }else{
+              clearInterval(smooth);
+            }
+          }, 0.17
+        )
+      }
 
 
 
