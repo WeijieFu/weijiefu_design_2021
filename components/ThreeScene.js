@@ -320,7 +320,7 @@ class SceneInit {
       this.scrollPosition = window.scrollY;
 
 
-      if(this.scrollPosition >= 0 && this.scrollPosition < this.headerPositionEnd){
+      if(this.scrollPosition >= 0 && this.scrollPosition < this.height-60){
         let smooth = setInterval(
           ()=>{
             if(Math.abs(this.options.perlin.decay-0.01)>0.001){
