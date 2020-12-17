@@ -54,7 +54,7 @@ export default {
     
 }
 .title_fill {
-    backdrop-filter: blur(40px) invert(10%);
+    backdrop-filter: blur(10px) invert(10%);
     clip-path: url(#myClip);
     position: absolute;
 

@@ -31,7 +31,7 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-        ['vue-scrollto/nuxt', { duration: 2000 ,easing: 'ease-in-out'}],
+        ['vue-scrollto/nuxt', { duration: 2000 ,easing: 'ease-in-out', offset: -60}],
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

@@ -5,8 +5,8 @@
     <About />
     <Work />
     <Contact />
-    <Nav/>
-
+    <Nav v-show="showNav"/>
+    <Footer/>
     
 
       
@@ -20,11 +20,17 @@ import Header from '@/components/Home/Header.vue';
 import About from '@/components/Home/About.vue';
 import Contact from '@/components/Home/Contact.vue';
 import Nav from '@/components/Home/Nav.vue';
+import Footer from '@/components/Home/Footer.vue';
 
 
 
 
 export default {
+  data(){
+    return{
+      showNav: true,
+    }
+  },
 
   components :{
     ThreeScene,
@@ -32,6 +38,7 @@ export default {
     About,
     Contact,
     Nav,
+    Footer,
 
 
 

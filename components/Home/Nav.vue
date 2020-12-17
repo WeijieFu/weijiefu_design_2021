@@ -33,11 +33,13 @@ export default {
         z-index: 102;
         width: 90vw;
         position: fixed;
-        bottom: 1rem;
+        top: 1rem;
         
          display: flex;
         justify-content: space-between;
         align-items: center;
+
+        font-family: 'Exo 2', sans-serif;
     }
     .nav_circle{
         fill: #fff;
