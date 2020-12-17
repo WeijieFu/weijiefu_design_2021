@@ -35,6 +35,7 @@ export default {
         color: red;
         width: 100vw;
         height: 200vh;
+        margin-bottom: 5rem;
     }
     .title_fill{
         backdrop-filter: blur(10px) invert(10%);
