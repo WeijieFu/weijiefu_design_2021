@@ -4,9 +4,9 @@
             <line x1="2.5rem" y1="0" x2="2.5rem" y2="7rem" />
         </svg>
         
-        <svg height="2rem" width="2rem" class="start_circle" @click="onClick">
+        <svg height="1rem" width="1rem" class="start_circle" @click="onClick">
             <a href="#" v-scroll-to="'#about'">
-                <circle cx="1rem" cy="1rem" r="1rem" />
+                <rect width="1rem" height="1rem"  />
             </a>
         </svg>
       
@@ -44,15 +44,20 @@ export default {
 }
 
 .start_circle {
-    fill: var(--color-text-grey);
+    stroke: var(--color-text-grey);
     stroke-width: 2px;
+    fill: none;
+    
     transition: all 0.2s ease-out;
     margin-top: 1rem;
+
+    transform: rotate(45deg);
+   
 }
 
 .start_circle:hover {
-    cursor: pointer;
-    transform: scale(1.5,1.5);
+    fill: #fff;
+    transform: scale(1.5,1.5) rotate(720deg);
 }
 
 .start_line {
@@ -74,6 +79,7 @@ export default {
         stroke-dashoffset: 0;
     }
 }
+
 
 
 </style>
