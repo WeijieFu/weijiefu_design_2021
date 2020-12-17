@@ -318,7 +318,7 @@ class SceneInit {
 
    onWindowScroll(){
       this.scrollPosition = window.scrollY;
-      console.log(this.scrollPosition, this.aboutPosition);
+
 
       // if(this.scrollPosition >= 0 && this.scrollPosition < this.headerPositionEnd){
       //   let smooth = setInterval(

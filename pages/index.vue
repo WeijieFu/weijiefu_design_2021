@@ -49,6 +49,19 @@ export default {
     Nav,
     Footer,
   },
+
+  mounted(){
+    window.addEventListener('scroll', this.toShowNav);
+  },
+  methods:{
+    toShowNav(){
+
+      if(window.scrollY >= window.innerHeight){
+        this.$store.commit('showNav');
+      }
+    }
+  }
+
 }
 </script>
 
