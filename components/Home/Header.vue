@@ -23,7 +23,7 @@
             Developer. <br>Passionate about creating smile-making
             experiences in both the physical and digital worlds. :)
         </div>
-        <Start/>
+        <Start />
     </div>
 </template>
 <script>
@@ -31,7 +31,8 @@ import Start from '@/components/Home/Start.vue';
 export default {
     components:{
         Start
-    }
+    },
+    
 }
 </script>
 <style scoped>

@@ -19,10 +19,12 @@ export default {
         return{
          
         }
+
     },
+   
     methods:{
         onClick(){
-            
+            this.$store.commit('showNav');
         }
     }
 }

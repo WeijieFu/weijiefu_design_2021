@@ -1,13 +1,15 @@
 <template>
   <div class="container">
     <ThreeScene />
-    <Header />
+    <Header showNav="showNav"/>
     <About />
     <Work />
     <Contact />
-    <Nav v-show="showNav"/>
+    <transition name="navEnter">
+      <Nav v-show="showNav" />
+    </transition>
     <Footer/>
-    
+   
 
       
 
@@ -26,13 +28,15 @@ import Footer from '@/components/Home/Footer.vue';
 
 
 export default {
-  data(){
-    return{
-      showNav: true,
-    }
+  computed:{
+    showNav(){
+      return this.$store.state.showNav;
+      
+    },
   },
+  
 
-  components :{
+  components:{
     ThreeScene,
     Header,
     About,
@@ -47,6 +51,13 @@ export default {
 </script>
 
 <style>
+/* .console{
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: red;
+  z-index: 9999;
+} */
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -57,7 +68,8 @@ export default {
   flex-direction: column;
 
 }
-
+.navEnter-enter-active, .navEnter-leave-active { transition: opacity .5s; transition-delay: 1s; }
+.navEnter-enter, .navEnter-leave-active { opacity: 0; }
 
 
 </style>

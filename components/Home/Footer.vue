@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="footer_text">© 2021 | design and coded by Weijie Fu</div>
+        <div class="footer_text">© 2021 | designed and coded by Weijie Fu</div>
     </div>
 </template>
 <script>
