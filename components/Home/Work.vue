@@ -88,4 +88,29 @@ export default {
         margin-top: 28rem;
     }
     
+    @media only screen and (max-width: 1000px) {
+        .title_fill{
+            transform: scale(1.8);
+        }
+        .project0{
+            margin-top: 15rem;
+        }
+        .work{
+            margin-bottom: 5rem;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .work{
+            margin-bottom: 5rem;
+        }
+        .title_fill{
+            transform: scale(1);
+
+        }
+        
+        .project0{
+            margin-top: 1rem !important; 
+    }
+}
+
 </style>

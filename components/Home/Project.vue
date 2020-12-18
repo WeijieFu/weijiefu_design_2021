@@ -50,7 +50,7 @@ export default {
         margin-left: 0.5rem;
 
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         height: 7rem;
         transition: all 0.5s;
     }
@@ -97,4 +97,46 @@ export default {
 
     .slideIn-enter-active, .slideIn-leave-active { transition: all .5s; }
     .slideIn-enter, .slideIn-leave-active { opacity: 0; transform: translateY(-1rem) }
+
+
+    @media only screen and (max-width: 1000px) {
+        .project_name{
+            font-size: 2rem;
+        }
+        .project{
+            height: 3rem;
+        }
+        .project:hover{
+            height: 6rem;
+        }
+        .right{
+        /* background-color: bisque; */
+
+        transform: scale(0.3) translateY(-15rem);
+    }
+    .arrowdown{
+        transform: scale(0.3, -0.3) translateY(15rem) rotate(45deg);
+    }
+    }
+    @media only screen and (max-width: 600px) {
+        .project{
+            height: 5rem;
+        }
+        .title_fill{
+            transform: scale(1);
+            margin-left: 1rem;
+        }
+    
+        .right{
+            display:none !important ;
+        }
+        .project_description{
+            display: block !important;
+            font-size: 0.75rem;
+            margin-right: 1rem;
+        }
+        .project_description span{
+            display: none;
+        }
+    }
 </style>

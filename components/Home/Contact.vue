@@ -94,6 +94,47 @@ export default {
     .social_item a:hover{
         color: #fff;
     }
-    
+
+
+     @media only screen and (max-width: 1000px) {
+        .title_fill{
+            transform: scale(1.8);
+        }
+        .contact_chapter{
+            margin-left: 25rem;
+        }
+        .contact_chapter_title{
+            font-size: 1.5rem;
+        }
+        
+    }
+    @media only screen and (max-width: 600px) {
+        .contact{
+            margin-bottom: 1rem;
+            height: 85vh;
+            /* background-color: cadetblue; */
+        }
+        .title_fill{
+            transform: scale(1);
+
+        }
+         .contact_chapter{
+            top: 19rem;
+            margin-left: 1rem;
+            text-align: left;
+        }
+        .contact_chapter_title{
+            text-align: left;
+        }
+        
+        .social{
+            justify-content: flex-start;
+
+        }
+        .social_item{
+            margin-left: 0;
+            margin-right: 1rem;
+        }
+    }
     
 </style>

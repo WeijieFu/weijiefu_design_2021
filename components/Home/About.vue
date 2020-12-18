@@ -128,4 +128,43 @@ export default {
         color: #fff;
     }
 
+@media only screen and (max-width: 1000px) {
+   .title_fill{
+        transform: scale(1.8);
+    }
+    .about_chapter{
+        margin-left: 30rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about{
+        margin-bottom: 5rem;
+    }
+   .title_fill{
+        transform: scale(1);
+
+
+    }
+    .about_chapter{
+
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+    .about_chapter0{
+        margin-top: 18rem !important; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
