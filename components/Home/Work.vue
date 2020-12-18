@@ -27,21 +27,29 @@
                 pIndex="01" 
                 pName="Swon.ca" 
                 pRole="Brand Concept, Art & Creative Direction, Visual Identity Design, UI Design, Web Development"
+                pLink="https://swon.ca/"
+                :pArrow="false"
         />
 
         <Project pIndex="02"
                  pName="Eminence"
                  pRole="Web Concept, Visual Design, Web Development"
+                 pLink="https://eminencenft.com/"
+                 :pArrow="false"
         />
 
         <Project pIndex="03"
                  pName="Appitur"
                  pRole="User Research, Visual Identity Design, UI Design"
+                 pLink="/"
+                 :pArrow="true"
         />
 
          <Project pIndex="04"
                  pName="Ocean Blue Project"
                  pRole="User Research, Visual Identity Design, UI Design"
+                 pLink="/"
+                 :pArrow="true"
         />
 
         

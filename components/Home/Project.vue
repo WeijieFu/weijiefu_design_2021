@@ -1,5 +1,5 @@
 <template>
-    <div class="project" @mouseover="isHover=true" @mouseleave="isHover=false">
+    <div class="project" @mouseover="isHover=true" @mouseleave="isHover=false"  @click="openLink">
             <div class="left">
                 <div class="project_title">
                     <div class="project_index">{{pIndex}}</div>
@@ -10,7 +10,7 @@
                 </transition>
             </div>
             <transition name="slideIn">
-            <div class="right" v-show="isHover">
+            <div class="right" v-show="isHover" :class="{ arrowdown : pArrow}">
                 <svg width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg" class="project_link">
                     <path d="M2 202L202 2"  stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M102 2H202V102"  stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,13 +28,17 @@ export default {
         }
     },
     props:{
-        pIndex: Number,
+        pIndex: String,
         pName: String,
         pRole: String,
         pLink: String,
         pArrow: Boolean,
+    },
+    methods:{
+        openLink(){
+            window.open(this.pLink, "_blank");
+        }
     }
-    
 }
 </script>
 <style scoped>
@@ -54,13 +58,14 @@ export default {
         height: 10rem;
     }
 
-    .left{
-        /* background-color: cadetblue; */
-    }
+   
     .right{
         /* background-color: bisque; */
 
         transform: scale(0.5) translateY(-2.8rem);
+    }
+    .arrowdown{
+        transform: scale(0.5, -0.5) translateY(4.5rem) rotate(45deg);
     }
     .project_link{
         stroke :var(--color-text-grey);
