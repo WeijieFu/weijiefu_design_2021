@@ -22,11 +22,42 @@
                  </svg>
             </div>
         </div>
+
+        <Project class="project0" 
+                pIndex="01" 
+                pName="Swon.ca" 
+                pRole="Brand Concept, Art & Creative Direction, Visual Identity Design, UI Design, Web Development"
+        />
+
+        <Project pIndex="02"
+                 pName="Eminence"
+                 pRole="Web Concept, Visual Design, Web Development"
+        />
+
+        <Project pIndex="03"
+                 pName="Appitur"
+                 pRole="User Research, Visual Identity Design, UI Design"
+        />
+
+         <Project pIndex="04"
+                 pName="Ocean Blue Project"
+                 pRole="User Research, Visual Identity Design, UI Design"
+        />
+
+        
+
+
+
+
     </div>
 </template>
 <script>
+import Project from '@/components/Home/Project.vue';
 export default {
-    
+    components:{
+        Project,
+    }
+   
 }
 </script>
 <style scoped>
@@ -34,14 +65,19 @@ export default {
         z-index: 101;
         color: red;
         width: 100vw;
-        height: 200vh;
+
         margin-bottom: 5rem;
+        
     }
     .title_fill{
         backdrop-filter: blur(10px) invert(10%);
         clip-path: url(#workClip);
-        position: absolute;
+        /* position: absolute; */
         transform-origin: top left;
         transform: scale(2.5);
     }
+    .project0{
+        margin-top: 28rem;
+    }
+    
 </style>
