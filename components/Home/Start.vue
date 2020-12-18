@@ -56,6 +56,7 @@ export default {
 }
 
 .start_circle:hover {
+    stroke: #fff;
     fill: #fff;
     transform: scale(1.5,1.5) rotate(720deg);
 }
