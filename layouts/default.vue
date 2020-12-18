@@ -3,7 +3,17 @@
     <Nuxt />
   </div>
 </template>
+<script>
+export default {
+  mounted(){
+    let firefoxAgent = navigator.userAgent.indexOf("Firefox") > -1;
 
+    if (firefoxAgent){
+      window.alert('Please use Google Chrome or Safari for better experience. Thank you!');
+    }
+  }
+}
+</script>
 <style>
 html {
   font-family:
