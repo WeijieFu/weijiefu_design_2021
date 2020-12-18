@@ -66,7 +66,7 @@ export default {
         color: red;
         width: 100vw;
 
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
         
     }
     .title_fill{
