@@ -6,7 +6,7 @@
                     <div class="project_name">{{pName}}</div>
                 </div>
                 <transition name="slideIn">
-                    <div class="project_description" v-show="isHover"><span>MY ROLL</span>{{pRole}}</div>
+                    <div class="project_description" v-show="isHover"><span>MY ROLE</span>{{pRole}}</div>
                 </transition>
             </div>
             <transition name="slideIn">
