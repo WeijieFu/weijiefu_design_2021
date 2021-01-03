@@ -50,21 +50,21 @@ export default {
     .title_container{
         margin-left: 50vw;
         width: 50w;
-        position: absolute;
-        margin-top: 8rem;
+        /* position: absolute; */
+        padding-top: 8rem;
 
         font-family: 'Exo 2', sans-serif;
         line-height: 1.5;
 
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
     }
     
     .title{
         font-weight: 400;
         line-height: 1;
-        margin-bottom: 4rem;
+        margin-bottom: 8rem;
         z-index: 555;
         margin-top: 2rem;
         margin-left: -5rem;
