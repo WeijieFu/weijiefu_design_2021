@@ -1,5 +1,5 @@
 <template>
-    <div class="mouse" :style="{ left: x +'px', top: y + 'px'}">
+    <div class="mouse" :style="{ left: x +'px', top: y + 'px'}" :class="{isBlack : isBlack}">
        
             <svg height="150" width="150">
                 <rect width="150" height="150"  />
@@ -9,11 +9,14 @@
         <!-- <svg height="10" width="10" class="point">
             <circle cx="5" cy="5" r="5" fill="red" />
         </svg> -->
-
     </div>
 </template>
 <script>
 export default {
+    props:{
+        isBlack : Boolean,
+    },
+
     data(){
         return{
             x: -1000,
@@ -52,7 +55,9 @@ export default {
 .mouse svg{
     fill: #fff;
 }
-
+.isBlack svg{
+    fill: #000;
+}
 @keyframes square {
     0%{
         transform: translate(-50%, -50%) scale(0.1) rotate(0);

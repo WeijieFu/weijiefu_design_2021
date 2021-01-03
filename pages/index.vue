@@ -11,10 +11,6 @@
     <Footer/>
     <Mouse/>
     <Light/>
-   
-
-      
-
   </div>
 </template>
 

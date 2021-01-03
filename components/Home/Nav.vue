@@ -1,21 +1,20 @@
 <template>
     <div class="nav">
         <div class="nav_">
-            <svg height="10" width="10" class="nav_circle">
+            <svg height="10" width="10" class="nav_circle" :class="{isBlack : isBlack}">
                  <polygon points="0,10 10,10 10,0"  />
             </svg>
-            
             <a class="nav_link" href="#" v-scroll-to="'#about'">ABOUT</a>
         </div>
          <div class="nav_" >
-            <svg height="10" width="10" class="nav_circle">
+            <svg height="10" width="10" class="nav_circle" :class="{isBlack : isBlack}">
                  <polygon points="0,10 10,10 10,0"  />
             </svg>
             
             <a class="nav_link" href="#" v-scroll-to="'#work'">WORK</a>
         </div>
          <div class="nav_" >
-            <svg height="10" width="10" class="nav_circle">
+            <svg height="10" width="10" class="nav_circle" :class="{isBlack : isBlack}">
                  <polygon points="0,10 10,10 10,0"  />
             </svg>
             
@@ -25,13 +24,16 @@
 </template>
 <script>
 export default {
-  
+  props:{
+      isBlack: Boolean,
+  }
 }
 </script>
 <style scoped>
     .nav{
         z-index: 102;
-        width: 90vw;
+        width: 100vw;
+        padding: 0 5vw;
         position: fixed;
         top: 1rem;
         
@@ -55,8 +57,12 @@ export default {
        color: var(--color-text-grey);
    }
    .nav_:hover > .nav_link{
-
        color:#fff
    }
-
+   .isBlack{
+       fill: #000;
+   }
+   .isBlack:hover > .nav_link{
+       color: #000;
+   }
 </style>
