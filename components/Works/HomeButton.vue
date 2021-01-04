@@ -25,7 +25,7 @@ export default {
         top: 1rem;
         transition: all 0.2s ease-out;
         animation: 1s ease-in-out 0s slidedown;
-        background-color: #fff;
+
 
     }
     .home-button:hover{

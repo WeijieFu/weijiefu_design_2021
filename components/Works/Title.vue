@@ -68,6 +68,7 @@ export default {
         z-index: 555;
         margin-top: 2rem;
         margin-left: -5rem;
+        color: #cecece;
     }
 
     .tag{

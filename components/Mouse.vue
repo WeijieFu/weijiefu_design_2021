@@ -50,13 +50,17 @@ export default {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
+    backdrop-filter: invert(100%);
+
     
 }
 .mouse svg{
     fill: #fff;
+    opacity: 0;
 }
 .isBlack svg{
     fill: #000;
+      opacity: 0;
 }
 @keyframes square {
     0%{
