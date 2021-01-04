@@ -41,7 +41,7 @@
         <Project pIndex="03"
                  pName="Appitur"
                  pRole="User Research, Visual Identity Design, UI Design"
-                 pLink="/"
+                 pLink="https://www.weijiefu.design/appitur/"
                  :pArrow="true"
         />
 
