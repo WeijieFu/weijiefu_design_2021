@@ -15,5 +15,9 @@ export default {
     margin-bottom: 3rem;
     justify-content: space-evenly;
 }
-
+    @media only screen and (max-width: 600px) {
+        .icons-container{
+            margin-left: 4rem;
+        }
+    }
 </style>

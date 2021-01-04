@@ -40,4 +40,14 @@ export default {
     .text:hover {
         color: #000;
     }
+
+    @media only screen and (max-width: 600px) {
+        .footer-container{
+            height:100vh;
+            margin-top:0;
+        }
+        .text{
+            font-size: 5rem;
+        }
+    }
 </style>

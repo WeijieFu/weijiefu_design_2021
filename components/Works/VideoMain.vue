@@ -51,4 +51,24 @@ export default {
     font-weight: 600;
     margin-bottom: 3rem;
 }
+
+
+    @media only screen and (max-width: 600px) {
+        .video-container{
+            flex-direction: column-reverse;
+            height: auto;
+            width: 100vw;
+            margin-left: 0;
+
+        }
+        .text{
+            width: 80%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            font-size: 0.8rem;
+        }
+        .video{
+            margin-bottom: 5rem;
+        }
+    }
 </style>

@@ -26,4 +26,9 @@ export default {
     .image_full{
         width: 100vw;
     }
+    @media only screen and (max-width: 600px) {
+        .image{
+            width: 100vw;
+        }
+    }
 </style>

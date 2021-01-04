@@ -37,5 +37,18 @@ export default {
     .text{
         width: 40vw;
     }
+    @media only screen and (max-width: 600px) {
+        .container{
+            margin-left: 2rem;
+        }
+        .text{
+            width: 80vw;
+            font-size: 0.8rem;
+        }
+        .title{
+            font-size: 2rem;
+        }
+
+    }
 
 </style>

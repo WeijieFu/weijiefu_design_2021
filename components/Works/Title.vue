@@ -88,7 +88,17 @@ export default {
         font-weight: 300;
     }
   
-  
+    @media only screen and (max-width: 600px) {
+        .title_container{
+            margin-left: 2rem;
+            width: 90vw;
+        }
+        .title{
+            color: #cecece;
+            margin-left: 0rem;
+            font-size: 5rem !important;
+        }
+    }
     
 </style>>
 
