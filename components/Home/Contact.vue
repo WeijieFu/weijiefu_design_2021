@@ -31,7 +31,7 @@
                 <div class="social">
                     <div class="social_item"><a href="https://www.linkedin.com/in/weijie-fu-a16868a4/" target="_blank">linkedin</a></div>
                     <div class="social_item"><a href="https://www.instagram.com/weijiefu_92/" target="_blank">instagram</a></div>
-                    <div class="social_item"><a href="hhttps://dribbble.com/WeijieFu" target="_blank">dribbble</a></div>
+                    <div class="social_item"><a href="https://dribbble.com/WeijieFu" target="_blank">dribbble</a></div>
                 </div>
             </div>
         </div>
