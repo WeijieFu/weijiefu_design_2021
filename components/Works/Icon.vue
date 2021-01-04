@@ -16,8 +16,7 @@ export default {
 <style scoped>
 .icon-container{
     margin-right: 5rem;
-    /* margin-left: 1rem; */
-    width: 5rem;
+    width: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;

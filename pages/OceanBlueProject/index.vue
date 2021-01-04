@@ -36,12 +36,14 @@
         >
             <Icons>
                 <Icon
+                    :iconSrc="root+'icon/layers-24px.svg'"
                     iconAlt="information architecture"
-                    iconText="Information Architecture"
+                    iconText="Info Structure"
                 />
                 <Icon
-                    iconAlt="information architecture"
-                    iconText="Information Architecture"
+                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    iconAlt="user flow"
+                    iconText="User Flow"
                 />
             </Icons>
         </ChapterRight>
