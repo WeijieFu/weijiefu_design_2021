@@ -48,7 +48,7 @@
          <Project pIndex="04"
                  pName="Ocean Blue Project"
                  pRole="User Research, Visual Identity Design, UI Design"
-                 pLink="/"
+                 pLink="https://www.weijiefu.design/oceanblueproject/"
                  :pArrow="true"
         />
 
