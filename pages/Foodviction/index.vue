@@ -28,24 +28,24 @@
         >
             <Icons>
                 <Icon
-                    :iconSrc="root+'icon/layers-24px.svg'"
+                    :iconSrc="root+'icon/question_answer-24px.svg'"
                     iconAlt="stakeholder interview"
                     iconText="Stakeholder Interview"
                 />
                 <Icon
-                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    :iconSrc="root+'icon/edit_attributes-24px.svg'"
                     iconAlt="brand attributes"
                     iconText="Brand Attributes"
                 />
             </Icons>
             <Icons>
                 <Icon
-                    :iconSrc="root+'icon/layers-24px.svg'"
+                    :iconSrc="root+'icon/compare_arrows-24px.svg'"
                     iconAlt="competitor analysis"
                     iconText="Competitor Analysis"
                 />
                 <Icon
-                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    :iconSrc="root+'icon/accessibility_new-24px.svg'"
                     iconAlt="user persona"
                     iconText="User Persona"
                 />
