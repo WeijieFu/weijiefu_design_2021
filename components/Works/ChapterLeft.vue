@@ -3,6 +3,7 @@
 
         <div class="title">{{title}}</div>
         <div class="text">{{text}}</div>
+        <slot></slot>
     </div>
 </template>
 <script>
@@ -37,6 +38,9 @@ export default {
         .text{
             width: 80vw;
             font-size: 0.8rem;
+        }
+        .container{
+            margin-left: 2rem;
         }
     }
 </style>

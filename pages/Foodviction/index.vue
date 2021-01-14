@@ -31,14 +31,22 @@
 
 
         <ImageMain
-            :imageSrc="root+'foodviction/01_cover.png'"
-            imageAlt="banner"
+            :imageSrc="root+'foodviction/02_site_audit.jpg'"
+            imageAlt="site audit"
         />
+
+         <ChapterLeft
+            title="Current User Flow"
+            text="The exisiting information architecture was very chaotic. A very import product list was burried deep in the sub-link, and the categories didn't do the job to differentiate each service package. There were quetionaire and agreement pages not fit into the user flow. And the arrangement of call to actions makes user lost before they sign up a session. We decided to help the owner of Foodviction to work on a better version of service packages as well as onboarding experience. "
+        />  
+
+
+        <img src="@/assets/img/foodviction/03_current_site_map.svg" class="diagram" alt="current site map">
 
          <ChapterRight
             index="02"
             title="Research"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur neque, laudantium, porro odit corrupti minima nisi suscipit hic commodi deleniti. Sit vero accusamus expedita illum animi? Sit adipisci aliquid, eos, reiciendis molestias repudiandae doloribus saepe, alias veritatis non est. Molestiae iusto dolore aliquam veniam suscipit commodi ab, doloribus earum!"
+            text=""
         >
             <Icons>
                 <Icon
@@ -64,15 +72,42 @@
                     iconText="User Persona"
                 />
             </Icons>
-         </ChapterRight>
+        </ChapterRight>
     
-         <ChapterLeft
-
+        <ChapterLeft
             title="Stakeholder Interview"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid eveniet saepe, quam fuga, reprehenderit harum itaque laborum voluptatem ab consectetur. "
+            text="Key Focus Area"
+        >
+            <List
+            :listItems="[
+            '1. How would you measure success for this project?',
+            '2. What are you trying to communicate?',
+            '3. What are your challenges?',
+            '4. What have you done so far? What has worked? What hasn’t?',
+            '5. What should your customer accomplish with your website?'
+            ]"
+            
+            
+            />
+        </ChapterLeft>
+
+         <ChapterLeft
+            title="Brand Attributes"
+            text="Brand Attributes are the core values that define the overall nature of the company and represent the essence of the brand, it helps to portray the brand characteristics of the company and helps in formulating the brand identity. After long discussion with the owner of Foodviction, we have concluded 3 top brand attributes representing Foodviction."
+        />
+           
+         <img src="@/assets/img/foodviction/04_brand_attributes.svg" class="diagram diagram_small" alt="brand attributes">
+
+
+        <ChapterLeft
+            title="Competitor Analysis"
+            text="Together with the client, we looked into our competitors' strength and weakness strategically to see what helps to build brand identity in this industry and unsuccessful features to avoid. We picked 3 US-based nutritionists and their business websites."
         />
 
-
+         <ImageMain
+            :imageSrc="root+'foodviction/02_site_audit.jpg'"
+            imageAlt="site audit"
+        />
 
         <Footer
             pName="SWON"
@@ -92,6 +127,7 @@ import Icon from '@/components/Works/Icon.vue';
 import Icons from '@/components/Works/Icons.vue';
 import VideoMain from '@/components/Works/VideoMain.vue';
 import Footer from '@/components/Works/Footer.vue';
+import List from '@/components/Works/List.vue';
 
 
 export default {
@@ -124,5 +160,9 @@ export default {
         margin-top: 6rem;
         width: 75vw;
         margin-left: 12.5vw;
+    }
+    .diagram_small{
+        width: 40vw;
+        margin-left: 30vw;
     }
 </style>
