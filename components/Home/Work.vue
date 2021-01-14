@@ -31,26 +31,37 @@
                 :pArrow="false"
         />
 
-        <Project pIndex="02"
-                 pName="Eminence"
-                 pRole="Web Concept, Visual Design, Web Development"
-                 pLink="https://eminencenft.com/"
-                 :pArrow="false"
-        />
 
-        <Project pIndex="03"
+        <Project pIndex="02"
                  pName="Appitur"
                  pRole="User Research, Visual Identity Design, UI Design"
                  pLink="https://www.weijiefu.design/appitur/"
                  :pArrow="true"
         />
 
-         <Project pIndex="04"
+
+        <Project pIndex="03"
+                 pName="Foodviction"
+                 pRole="User Research, Visual Identity Design, UI Design"
+                 pLink="https://www.weijiefu.design/foodviction/"
+                 :pArrow="true"
+        />
+
+        <Project pIndex="04"
                  pName="Ocean Blue Project"
                  pRole="User Research, Visual Identity Design, UI Design"
                  pLink="https://www.weijiefu.design/oceanblueproject/"
                  :pArrow="true"
         />
+
+        <Project pIndex="05"
+                 pName="Cycling Shanghai"
+                 pRole="User Research, Visual Identity Design, UI Design"
+                 pLink="https://www.weijiefu.design/cyclingshanghai/"
+                 :pArrow="true"
+        />
+
+        
 
         
 

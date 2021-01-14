@@ -15,4 +15,5 @@ export default {
         color: #fff;
         margin-bottom: 2rem;
     }
+   
 </style>
