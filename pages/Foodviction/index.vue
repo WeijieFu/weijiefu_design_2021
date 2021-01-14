@@ -11,7 +11,7 @@
         />
 
         <ImageMain
-            :imageSrc="root+'ocean_blue_project/05 banner.jpg'"
+            :imageSrc="root+'foodviction/01_cover.png'"
             imageAlt="banner"
         />
 
@@ -27,6 +27,11 @@ import Title from '@/components/Works/Title.vue';
 
 
 export default {
+     data(){
+        return{
+            root: "https://cdn.jsdelivr.net/gh/WeijieFu/weijiefu_design_2021/assets/img/"
+        }
+    },
     components:{
         Mouse,
         HomeButton,
