@@ -27,5 +27,6 @@ export default {
 }
 .text{
     color: #cecece;
+    text-align: center;
 }
 </style>

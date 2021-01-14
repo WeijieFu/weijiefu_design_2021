@@ -15,7 +15,43 @@
             imageAlt="banner"
         />
 
+        <ChapterRight
+            index="01"
+            title="Problem Space"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur neque, laudantium, porro odit corrupti minima nisi suscipit hic commodi deleniti. Sit vero accusamus expedita illum animi? Sit adipisci aliquid, eos, reiciendis molestias repudiandae doloribus saepe, alias veritatis non est. Molestiae iusto dolore aliquam veniam suscipit commodi ab, doloribus earum!"
+        />
 
+         <ChapterRight
+            index="02"
+            title="Research"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur neque, laudantium, porro odit corrupti minima nisi suscipit hic commodi deleniti. Sit vero accusamus expedita illum animi? Sit adipisci aliquid, eos, reiciendis molestias repudiandae doloribus saepe, alias veritatis non est. Molestiae iusto dolore aliquam veniam suscipit commodi ab, doloribus earum!"
+        >
+            <Icons>
+                <Icon
+                    :iconSrc="root+'icon/layers-24px.svg'"
+                    iconAlt="stakeholder interview"
+                    iconText="Stakeholder Interview"
+                />
+                <Icon
+                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    iconAlt="brand attributes"
+                    iconText="Brand Attributes"
+                />
+            </Icons>
+            <Icons>
+                <Icon
+                    :iconSrc="root+'icon/layers-24px.svg'"
+                    iconAlt="competitor analysis"
+                    iconText="Competitor Analysis"
+                />
+                <Icon
+                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    iconAlt="user persona"
+                    iconText="User Persona"
+                />
+            </Icons>
+         </ChapterRight>
+    
 
 
     </div>
@@ -24,6 +60,13 @@
 import Mouse from '@/components/Mouse.vue';
 import HomeButton from '@/components/Works/HomeButton.vue';
 import Title from '@/components/Works/Title.vue';
+import ImageMain from '@/components/Works/ImageMain.vue';
+import ChapterRight from '@/components/Works/ChapterRight.vue';
+import ChapterLeft from '@/components/Works/ChapterLeft.vue';
+import Icon from '@/components/Works/Icon.vue';
+import Icons from '@/components/Works/Icons.vue';
+import VideoMain from '@/components/Works/VideoMain.vue';
+import Footer from '@/components/Works/Footer.vue';
 
 
 export default {
@@ -45,7 +88,7 @@ export default {
 
     background-color: #fff;
     width: 100vw;
-    height: 300vh;
+
     
 }
 </style>
