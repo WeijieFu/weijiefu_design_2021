@@ -21,6 +21,20 @@
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur neque, laudantium, porro odit corrupti minima nisi suscipit hic commodi deleniti. Sit vero accusamus expedita illum animi? Sit adipisci aliquid, eos, reiciendis molestias repudiandae doloribus saepe, alias veritatis non est. Molestiae iusto dolore aliquam veniam suscipit commodi ab, doloribus earum!"
         />
 
+        
+
+
+        <ChapterLeft
+            title="Site Audit"
+            text="Before we started our ideation session, we conducted site audit on client's exsiting website. It is a very amateurishly built website with elementor and wordpress. But there are some points we appreciate, such as the orange/green color palette and the representation of healthy food. "
+        />  
+
+
+        <ImageMain
+            :imageSrc="root+'foodviction/01_cover.png'"
+            imageAlt="banner"
+        />
+
          <ChapterRight
             index="02"
             title="Research"
@@ -52,7 +66,18 @@
             </Icons>
          </ChapterRight>
     
+         <ChapterLeft
 
+            title="Stakeholder Interview"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid eveniet saepe, quam fuga, reprehenderit harum itaque laborum voluptatem ab consectetur. "
+        />
+
+
+
+        <Footer
+            pName="SWON"
+            pLink="https://swon.ca/"
+        />
 
     </div>
 </template>
@@ -79,16 +104,25 @@ export default {
         Mouse,
         HomeButton,
         Title,
+        ImageMain,
+        ChapterRight,
+        ChapterLeft,
+        Icon,
+        Icons,
+        VideoMain,
+        Footer,
 
     }
 }
 </script>
 <style scoped>
-.container{
-
-    background-color: #fff;
-    width: 100vw;
-
-    
-}
+    .container{
+        background-color: #fff;
+        width: 100vw;
+    }
+    .diagram{
+        margin-top: 6rem;
+        width: 75vw;
+        margin-left: 12.5vw;
+    }
 </style>
