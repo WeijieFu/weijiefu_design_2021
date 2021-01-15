@@ -167,7 +167,7 @@
         <img src="@/assets/img/foodviction/07_onboarding_1.svg" class="diagram" alt="regular user">
 
 
-         <ChapterLeft
+        <ChapterLeft
             title="First-time User"
             text="Quickiest way to let the user have a grasp of what this website is about and what services they can find."
         />
@@ -190,7 +190,7 @@
 
 
 
-         <ChapterRight
+        <ChapterRight
             index="04"
             title="Wireframe"
             text="I sketched out several possible layouts according to the new site map. After the discussion with the client, we decided to create a minimalistic and functional wireframe."
@@ -198,8 +198,52 @@
 
         <ImageMain
             :imageSrc="root+'foodviction/09_wireframe.png'"
-            imageAlt="competitor analysis"
+            imageAlt="wireframe"
         />
+
+        <ChapterRight
+            index="05"
+            title="Style Guide"
+            text="A very obvious drawback of the existing webiste is the lack of coherent visual style."
+        />
+
+        <ChapterLeft
+            title="Color Scheme"
+            text="We created this new color scheme for Foodviction, based on the original orange-green combination. The original colors are very popping out, but difficult to utilize. It's hard to read with bright orange or green background and the colors are very distracting from the images and text content. So we decided to tune down the saturation and add 2 different grey color as secondary colors."
+        />
+
+
+        <img src="@/assets/img/foodviction/10_color_scheme.svg" class="diagram" alt="color scheme">
+
+        <ChapterLeft
+            title="Typography"
+        />
+
+
+        <img src="@/assets/img/foodviction/11_typography.svg" class="diagram" alt="typography">
+
+
+        <ChapterRight
+            index="05"
+            title="Prototype"
+            text="The biggest challenge of creating a visual style for Foodviction is to utlize color and typography to convey the spirit of Foodviction. After many discussions and revisions, we created this simple and dynamic look with sense of energy and youthfulness."
+        />
+
+        <ChapterLeft
+            title="Onboarding"
+        />
+
+        
+        <ImageMain
+            :imageSrc="root+'foodviction/12_prototype_home.png'"
+            imageAlt="prototype home page"
+        />
+        
+
+
+
+
+
 
         <Footer
             pName="SWON"
