@@ -235,8 +235,8 @@
 
         
         <ImageMain
-            :imageSrc="root+'foodviction/13_prototype_booking.png'"
-            imageAlt="prototype booking"
+            :imageSrc="root+'foodviction/12_prototype_home.png'"
+            imageAlt="prototype home page"
             :isFull="true"
         />
         
@@ -244,7 +244,17 @@
             title="Booking"
         />
 
+        <ImageMain
+            :imageSrc="root+'foodviction/13_prototype_booking.png'"
+            imageAlt="prototype booking"
+            :isFull="true"
+        />
 
+        <ImageMain
+            :imageSrc="root+'foodviction/14_prototype_rest.png'"
+            imageAlt="prototype"
+            :isFull="true"
+        />
 
 
 
