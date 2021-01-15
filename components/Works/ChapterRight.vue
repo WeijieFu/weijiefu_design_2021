@@ -3,7 +3,7 @@
         <div class="index">{{index}}</div>
         <div class="title">{{title}}</div>
         <slot class="icons"></slot>
-        <div class="text">{{text}}</div>
+        <div class="text" v-for="str in textSplitted" :key="str">{{str}}<br><br></div>
     </div>
 </template>
 <script>
@@ -12,7 +12,13 @@ export default {
         index: String,
         title: String,
         text: String,
+    },
+    computed:{
+        textSplitted(){
+            return this.text.split('|');
+        }
     }
+    
 }
 </script>
 <style scoped>
