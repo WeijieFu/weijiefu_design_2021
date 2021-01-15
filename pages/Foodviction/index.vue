@@ -235,11 +235,14 @@
 
         
         <ImageMain
-            :imageSrc="root+'foodviction/12_prototype_home.png'"
-            imageAlt="prototype home page"
+            :imageSrc="root+'foodviction/13_prototype_booking.png'"
+            imageAlt="prototype booking"
+            :isFull="true"
         />
         
-
+        <ChapterLeft
+            title="Booking"
+        />
 
 
 
