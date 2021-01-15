@@ -54,12 +54,7 @@
                  :pArrow="true"
         />
 
-        <Project pIndex="05"
-                 pName="Cycling Shanghai"
-                 pRole="User Research, Visual Identity Design, UI Design"
-                 pLink="https://www.weijiefu.design/cyclingshanghai/"
-                 :pArrow="true"
-        />
+       
 
         
 
