@@ -253,7 +253,7 @@
         <ImageMain
             :imageSrc="root+'foodviction/14_prototype_rest.png'"
             imageAlt="prototype"
-            :isFull="true"
+
         />
 
 
