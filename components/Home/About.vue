@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="about_chapter_text  about_chapter about_chapter0">
-            I'm an Experience Designer, professionally trained as an architect and tinkering with code on my own.
+            I'm an experience designer, professionally trained as an architect and tinkering with code on my own.
             <br />
             <br />
             My background as an architect has taught me the importance of empathy and sensitivity for the environment in which users are immersed. During my work and study, I have gained experience in researching and designing on different scales: from an urban study on how to transform existing infrastructure to enhance cyclists’ experience in Shanghai, to user research about improving work efficiency by reinventing office landscapes.

@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="description">
-            Experience Designer, Architect, and self-taught Web
-            Developer. <br>Passionate about creating smile-making
+            Experience designer, architect, and web
+            developer. <br>Passionate about creating smile-making
             experiences in both the physical and digital worlds. :)
         </div>
         <Start />
