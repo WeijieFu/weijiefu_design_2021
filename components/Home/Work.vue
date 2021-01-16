@@ -28,13 +28,13 @@
                 pName="Swon.ca" 
                 pRole="Brand Concept, Art & Creative Direction, Visual Identity Design, UI Design, Web Development"
                 pLink="https://swon.ca/"
-                :pArrow="false"
+                :pArrow="true"
         />
 
 
         <Project pIndex="02"
                  pName="Appitur"
-                 pRole="User Research, Visual Identity Design, UI Design"
+                 pRole="User Research, Design Sprint, Visual Identity Design, UI Design"
                  pLink="https://www.weijiefu.design/appitur/"
                  :pArrow="true"
         />
@@ -42,14 +42,14 @@
 
         <Project pIndex="03"
                  pName="Foodviction"
-                 pRole="User Research, Visual Identity Design, UI Design"
+                 pRole="Site Audit, User Research, Rebranding Concept, Visual Identity Design, Web Design"
                  pLink="https://www.weijiefu.design/foodviction/"
                  :pArrow="true"
         />
 
         <Project pIndex="04"
                  pName="Ocean Blue Project"
-                 pRole="User Research, Visual Identity Design, UI Design"
+                 pRole="User Research, Information Architecture, User Flow Design, UI Design"
                  pLink="https://www.weijiefu.design/oceanblueproject/"
                  :pArrow="true"
         />

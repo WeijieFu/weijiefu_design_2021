@@ -123,7 +123,7 @@
         
         <Footer
             pName="SWON"
-            pLink="https://swon.ca/"
+            pLink="https://weijiefu.design/swon"
         />
     </div>
 </template>

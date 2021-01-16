@@ -18,7 +18,7 @@
         <ChapterRight
             index="01"
             title="Problem Space"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur neque, laudantium, porro odit corrupti minima nisi suscipit hic commodi deleniti. Sit vero accusamus expedita illum animi? Sit adipisci aliquid, eos, reiciendis molestias repudiandae doloribus saepe, alias veritatis non est. Molestiae iusto dolore aliquam veniam suscipit commodi ab, doloribus earum!"
+            text=""
         />
 
         
@@ -253,14 +253,13 @@
         <ImageMain
             :imageSrc="root+'foodviction/14_prototype_rest.png'"
             imageAlt="prototype"
-
         />
 
 
 
         <Footer
-            pName="SWON"
-            pLink="https://swon.ca/"
+            pName="OCEAN BLUE PROJECT"
+            pLink="https:weijiefu.design/oceanblueproject"
         />
 
     </div>

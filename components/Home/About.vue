@@ -31,7 +31,7 @@
             <br />
 
             <div class="download">
-                  <a  href="https://drive.google.com/file/d/1ZMllNyoG8t1rH5c1uLkSkf7_ydOHZ_wx/view?usp=sharing"
+                  <a  href="https://drive.google.com/file/d/14reE9f7GT39abwH-7SAoy6GawM0FuOam/view?usp=sharing"
                       target="_blank">
                     download my resume
                 </a>

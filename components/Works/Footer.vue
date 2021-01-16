@@ -30,6 +30,7 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .text{
         font-family: 'Exo 2', sans-serif;
