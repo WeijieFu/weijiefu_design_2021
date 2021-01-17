@@ -259,7 +259,7 @@
 
         <Footer
             pName="OCEAN BLUE PROJECT"
-            pLink="https:weijiefu.design/oceanblueproject"
+            pLink="https://weijiefu.design/oceanblueproject"
         />
 
     </div>
