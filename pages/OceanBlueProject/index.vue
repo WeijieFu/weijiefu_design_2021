@@ -32,7 +32,7 @@
         <ChapterRight
             index="02"
             title="Research"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid eveniet saepe, quam fuga, reprehenderit harum itaque laborum voluptatem ab consectetur. Fugit rem, aspernatur, veniam vero atque minima repudiandae possimus architecto itaque modi, nesciunt eum repellendus quam a doloribus totam facilis. Fugiat architecto quas optio dicta provident in unde eos?"
+            text=""
         >
             <Icons>
                 <Icon
@@ -49,9 +49,8 @@
         </ChapterRight>
 
         <ChapterLeft
-
             title="Information Structure"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid eveniet saepe, quam fuga, reprehenderit harum itaque laborum voluptatem ab consectetur. "
+            text="The main framework of this application contains 5 parts, which will share an intersection module with each other, namely the CleanUp session. A CleanUp session can be shared in the social feeds, and the status of a current CleanUp can be managed in the message and profile section. The structure of the app enables a fluent flow for user to share, join, organize CleanUps."
         />
 
         <img src="@/assets/img/ocean_blue_project/02 information_architecture.svg" class="diagram" alt="information structure">
