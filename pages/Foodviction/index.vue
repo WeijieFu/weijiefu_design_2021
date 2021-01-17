@@ -303,7 +303,7 @@ export default {
 </script>
 <style scoped>
     .container{
-        background-color: #fff;
+        background-color: #eee;
         width: 100vw;
     }
     .diagram{
