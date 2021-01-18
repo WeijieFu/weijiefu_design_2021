@@ -235,7 +235,7 @@
 
         
         <ImageMain
-            :imageSrc="root+'foodviction/12_prototype_home.png'"
+            :imageSrc="root+'foodviction/12_prototype_home_x.png'"
             imageAlt="prototype home page"
             :isFull="true"
         />
@@ -251,7 +251,7 @@
         />
 
         <ImageMain
-            :imageSrc="root+'foodviction/14_prototype_rest.png'"
+            :imageSrc="root+'foodviction/14_prototype_rest_x.png'"
             imageAlt="prototype"
         />
 
