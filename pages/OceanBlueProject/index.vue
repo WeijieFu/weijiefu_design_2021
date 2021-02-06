@@ -56,16 +56,6 @@
         <img src="@/assets/img/ocean_blue_project/02 information_architecture.svg" class="diagram" alt="information structure">
 
 
-        <ChapterLeft
-
-            title="User Flow"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid eveniet saepe, quam fuga, reprehenderit harum itaque laborum voluptatem ab consectetur. "
-        />
-
-        <img src="@/assets/img/ocean_blue_project/02 information_architecture.svg" class="diagram" alt="information structure">
-
-
-
         <ChapterRight
             index="03"
             title="Wireframe"

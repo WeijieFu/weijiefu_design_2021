@@ -32,7 +32,8 @@ export default {
     },
      mounted(){
         this.root = document.querySelector('.canvas');
-        sceneInit(this.root, this.options);
+        this.scene = sceneInit(this.root, this.options);
+
     },
 
 
