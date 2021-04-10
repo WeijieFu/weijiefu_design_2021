@@ -1,11 +1,10 @@
 <template>
   <div class="canvas">
-    
   </div>
 </template>
 
 <script>
-
+import * as THREE from 'three'
 import sceneInit from '@/components/ThreeScene.js';
 
 export default {
@@ -30,10 +29,13 @@ export default {
         }
       }
     },
-     mounted(){
+    methods:{
+      
+    },
+
+    mounted(){
         this.root = document.querySelector('.canvas');
         this.scene = sceneInit(this.root, this.options);
-
     },
 
 
@@ -50,5 +52,10 @@ export default {
     position: fixed;
     top:0;
     left: 0;
+}
+
+button {
+  z-index: 100000;
+  position: fixed;
 }
 </style>
