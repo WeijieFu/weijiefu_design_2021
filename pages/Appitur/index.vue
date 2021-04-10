@@ -21,7 +21,30 @@
             text=""
         />
 
+         <ChapterLeft
+            title=""
+            text="Appitur's three mobile apps are losing users and generating less revenue, due to a myriad of reasons: "
+        >
+            <List
+                :listItems="[
+                `1. Confusing navigation : Navigating in the app is very confusing and important call to action buttons are often missing or ignored by the users.`,
+                `2. User flow mismatching user needs : The existing app didn't take special needs from the target customers into consideration, therefore the function is less tailored or hard to use.`,
+                `3. Outdated UI : The existing app needs a visual upgrade to create professional and trustworthy  impression.`,
+                `4. Lack of engagement engine : Besides plain study and exam materials, the existing app doesn't offer much positive feedback to comply with user's learning curve.`
+                ]"
+            />
+        </ChapterLeft>
 
+        <ChapterRight
+            index="02"
+            title="Lean Cycle"
+            text="By working closely with the shareholders and developer team, we implemented a Lean Cycle developing schedule, where the process is iterative and measurable."
+        />
+
+          <ImageMain
+            :imageSrc="root+'appitur/02_lean_cycle.jpg'"
+            imageAlt="banner"
+        />
     </div>
 </template>
 <script>
@@ -63,7 +86,7 @@ export default {
 
     background-color: #fff;
     width: 100vw;
-    height: 300vh;
+
     
 }
 </style>
