@@ -21,7 +21,7 @@
             text=""
         />
 
-         <ChapterLeft
+        <ChapterLeft
             title=""
             text="Appitur's three mobile apps are losing users and generating less revenue, due to a myriad of reasons: "
         >
@@ -41,10 +41,60 @@
             text="By working closely with the shareholders and developer team, we implemented a Lean Cycle developing schedule, where the process is iterative and measurable."
         />
 
-          <ImageMain
+        <ImageMain
             :imageSrc="root+'appitur/02_lean_cycle.jpg'"
             imageAlt="banner"
         />
+
+        <ChapterLeft
+            title="Initial Usability Research Phase"
+            text="Identify pain points and critical user needs. Understand the base APIs from the engineer.  Save nice-to-have features for further development."
+        />
+
+        <ChapterLeft
+            title="Project Foundation Phase"
+            text="Implement findings from critical pain points, redesign and develop basic user interface for the initial launch."
+        />
+
+        <ChapterLeft
+            title="Lean Cycle Phase"
+            text="Getting feedbacks and make improvements on top of the initial design, develop and launch new features."
+        />
+
+        <ChapterRight
+            index="03"
+            title="Research"
+            text=""
+        >
+            <Icons>
+                <Icon
+                    :iconSrc="root+'icon/question_answer-24px.svg'"
+                    iconAlt="semi-structured interview"
+                    iconText="Semi-structured Interview"
+                />
+                <Icon
+                    :iconSrc="root+'icon/perm_identity-24px.svg'"
+                    iconAlt="stakeholder interview"
+                    iconText="Stakeholder Interview"
+                />
+            </Icons>
+            <Icons>
+                <Icon
+                    :iconSrc="root+'icon/quiz_black_24dp.svg'"
+                    iconAlt="usability testing"
+                    iconText="Usability Testing"
+                />
+                <Icon
+                    :iconSrc="root+'icon/phone_iphone_black_24dp.svg'"
+                    iconAlt="case study"
+                    iconText="Case Study"
+                />
+            </Icons>
+          
+                
+
+        </ChapterRight>
+
     </div>
 </template>
 <script>
