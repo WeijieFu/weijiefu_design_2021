@@ -90,10 +90,26 @@
                     iconText="Case Study"
                 />
             </Icons>
-          
-                
-
         </ChapterRight>
+
+
+        <ChapterLeft
+            title="Semi-structured Interview"
+            text="In oder to get a clear picture of how our primary users are studying for the exams, we started with a round of semi-structured interviews with the target users to understand their's motivation and expectation about online education and assessment services."
+        />
+
+         <ImageMain
+            :imageSrc="root+'appitur/03_interview_key_finding.png'"
+            imageAlt="banner"
+        />
+
+        <ChapterLeft
+            title=""
+            text="Since the existing Appitur apps are for people who are doing professional certification exams (CIA, CMA, etc) and Appitur's clients are established training and education institutions in the field, our target users are professionals in their 20s or 30s looking for career breakthroughs. We gathered a group of 5 to ask how they prepare for professional exams both online and offline, the differences and the frustrations they've encountered."
+        />
+       
+
+        
 
     </div>
 </template>
