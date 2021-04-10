@@ -98,7 +98,7 @@
             text="In oder to get a clear picture of how our primary users are studying for the exams, we started with a round of semi-structured interviews with the target users to understand their's motivation and expectation about online education and assessment services."
         />
 
-         <ImageMain
+        <ImageMain
             :imageSrc="root+'appitur/03_interview_key_finding.png'"
             imageAlt="banner"
         />
@@ -107,10 +107,69 @@
             title=""
             text="Since the existing Appitur apps are for people who are doing professional certification exams (CIA, CMA, etc) and Appitur's clients are established training and education institutions in the field, our target users are professionals in their 20s or 30s looking for career breakthroughs. We gathered a group of 5 to ask how they prepare for professional exams both online and offline, the differences and the frustrations they've encountered."
         />
+
+
+        <ChapterLeft
+            title=""
+            text="Key Findings"
+        >
+        </ChapterLeft>
+        <ChapterLeft
+            title=""
+            text="How do people study for professional certification exams?"
+        >
+            <List
+                :listItems="[
+                `- Official study guide book from exam institutes`,
+                `- Third party IRL classes`,
+                `- Third party study guide book`,
+                `- Mock exams and Tests from third party`,
+                `- Flashcards either made by themselves or from third party`,
+                ]"
+            />
+        </ChapterLeft>
+
+        <ChapterLeft
+            title=""
+            text="Behavioural pattern found among target users. Key quotes : "
+        >
+            <List
+                :listItems="[
+                `- can't study much on weekdays while I am working`,
+                `- 100 hours of study is my goal`,
+                `- I like to mark questions I got wrong for further review`,
+                `- I prefer 20 questions at a time`,
+                `- time management is crucial to exam prep`,
+                `- put my phone away when I study on my compute`,
+                ]"
+            />
+        </ChapterLeft>
+
+        <ChapterLeft
+            title="Stakeholder Interview"
+            text="To understand the business goal for this app, we talked to Kevin, who is the content provider of Hock CIA and CMA apps,  and Tom, the founder of Appitur E-learning Platform. Due to Covid-19 regulation, all interviews were conducted online."
+        />
+        <ImageMain
+            :imageSrc="root+'appitur/04_stakeholder.png'"
+            imageAlt="banner"
+        />
+        <ChapterLeft
+            title=""
+            text="Behavioural pattern found among target users. Key quotes : "
+        >
+            <List
+                :listItems="[
+                `- can't study much on weekdays while I am working`,
+                `- 100 hours of study is my goal`,
+                `- I like to mark questions I got wrong for further review`,
+                `- I prefer 20 questions at a time`,
+                `- time management is crucial to exam prep`,
+                `- put my phone away when I study on my compute`,
+                ]"
+            />
+        </ChapterLeft>
+
        
-
-        
-
     </div>
 </template>
 <script>
