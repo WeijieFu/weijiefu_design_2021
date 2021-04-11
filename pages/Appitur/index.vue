@@ -178,7 +178,7 @@
         />
 
          <ImageMain
-            :imageSrc="root+'appitur/05_user_testing.png'"
+            :imageSrc="root+'appitur/05_user_testingx.png'"
             imageAlt="banner"
         />
        
