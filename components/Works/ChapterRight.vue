@@ -3,7 +3,7 @@
         <div class="index">{{index}}</div>
         <div class="title">{{title}}</div>
         <slot class="icons"></slot>
-        <div class="text" v-for="str in textSplitted" :key="str">{{str}}<br><br></div>
+        <div class="text" v-for="str in textSplitted" :key="str">{{str}} <br><br></div>
     </div>
 </template>
 <script>

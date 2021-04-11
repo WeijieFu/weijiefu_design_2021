@@ -13,7 +13,7 @@ export default {
 <style scoped>
     .list{
         margin-top: 2rem;
-        color: #cecece;
+        color: #999999;
         width: 40vw;
         
     }

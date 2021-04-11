@@ -48,5 +48,7 @@ html {
   cursor: none; 
 }
 
-
+body{
+  overflow-x: hidden;
+}
 </style>

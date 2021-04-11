@@ -142,6 +142,7 @@
                 `- time management is crucial to exam prep`,
                 `- put my phone away when I study on my compute`,
                 ]"
+                color="#333333"
             />
         </ChapterLeft>
 
@@ -187,10 +188,35 @@
             text="Due to covid-19 regulation, the usability tests are conducted via online meeting with interactive web prototypes. The participants could interact with the prototype as they interact with a regular app."
         />
 
-        <no-ssr >
-            <!-- <PDF /> -->
-        </no-ssr>
-
+        <ImageGallery
+            :src="root+'appitur/06_user_testing_report/UTR - '"
+            :length="30"
+        />
+    
+        <ChapterRight
+            index="04"
+            title="Ideation"
+            text=""
+        >
+            <Icons>
+                <Icon
+                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    iconAlt="user flow"
+                    iconText="User Flow"
+                />
+                <Icon
+                    :iconSrc="root+'icon/important_devices_black_24dp.svg'"
+                    iconAlt="wireframe"
+                    iconText="Wireframe"
+                />
+            </Icons>
+            
+        </ChapterRight>
+        
+        <ChapterLeft
+            title="User Flow"
+            text="Due to covid-19 regulation, the usability tests are conducted via online meeting with interactive web prototypes. The participants could interact with the prototype as they interact with a regular app."
+        />
 
 
     </div>
@@ -206,6 +232,7 @@ import Icon from '@/components/Works/Icon.vue';
 import Icons from '@/components/Works/Icons.vue';
 import VideoMain from '@/components/Works/VideoMain.vue';
 import Footer from '@/components/Works/Footer.vue';
+import ImageGallery from '@/components/Works/ImageGallery.vue';
 
 
 export default {
@@ -225,6 +252,7 @@ export default {
         Icons,
         VideoMain,
         Footer,
+        ImageGallery
 
 
 
