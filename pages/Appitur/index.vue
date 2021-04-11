@@ -192,6 +192,21 @@
             :src="root+'appitur/06_user_testing_report/UTR - '"
             :length="30"
         />
+
+        <ChapterLeft
+            title=""
+            text="Action Items"
+        >
+            <List
+                :listItems="[
+                `- Provide more explanations (already in database) on all four choices, both right answers and wrong answers.`,
+                `- Add flashcards.`,
+                `- For performance session, it would be helpful if they can be broken down topic by topic.`,
+                `- Sign-up and Log-in is confusing on app.`,
+           
+                ]"
+            />
+        </ChapterLeft>
     
         <ChapterRight
             index="04"
@@ -215,8 +230,26 @@
         
         <ChapterLeft
             title="User Flow"
-            text="Due to covid-19 regulation, the usability tests are conducted via online meeting with interactive web prototypes. The participants could interact with the prototype as they interact with a regular app."
+            text="How might we improve the current user flow that reduce user's frustration, and also build a system which is able to incoporate more features through development cycles without spending a lot of efforts on changing what is already done. A minimal, lean and flexible model is required to create this new user flow."
         />
+
+       
+
+        <ChapterLeft
+            title=""
+            text="Existing User Flow"
+        />
+
+        <img src="@/assets/img/appitur/07_user_flow_old.svg" class="diagram" alt="user flow old">
+
+        <ChapterLeft
+            title=""
+            text="New User Flow"
+        />
+        
+        <img src="@/assets/img/appitur/08_user_flow_new.svg" class="diagram" alt="user flow new">
+
+        <img :src="root+'appitur/09_wireframe.png'" class="diagram" alt="wireframe">
 
 
     </div>
