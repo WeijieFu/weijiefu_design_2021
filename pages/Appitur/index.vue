@@ -182,6 +182,17 @@
             imageAlt="banner"
         />
        
+        <ChapterLeft
+            title=""
+            text="Due to covid-19 regulation, the usability tests are conducted via online meeting with interactive web prototypes. The participants could interact with the prototype as they interact with a regular app."
+        />
+
+        <no-ssr >
+            <!-- <PDF /> -->
+        </no-ssr>
+
+
+
     </div>
 </template>
 <script>
@@ -195,6 +206,7 @@ import Icon from '@/components/Works/Icon.vue';
 import Icons from '@/components/Works/Icons.vue';
 import VideoMain from '@/components/Works/VideoMain.vue';
 import Footer from '@/components/Works/Footer.vue';
+
 
 export default {
     data(){
@@ -213,6 +225,7 @@ export default {
         Icons,
         VideoMain,
         Footer,
+
 
 
     }
