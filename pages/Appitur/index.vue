@@ -280,6 +280,11 @@
             title="Design System"
             text=""
         />
+           <ImageMain
+            :imageSrc="root+'appitur/10_design_system.png'"
+            imageAlt="banner"
+        />
+
 
         <Footer
             pName="FOODVICTION"
