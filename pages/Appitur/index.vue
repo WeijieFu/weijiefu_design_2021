@@ -57,7 +57,7 @@
         />
 
         <ChapterLeft
-            title="Lean Cycle Phase"
+            title="Iteration Phase"
             text="Getting feedbacks and make improvements on top of the initial design, develop and launch new features."
         />
 
@@ -254,7 +254,7 @@
             text=""
         />
 
-        <img src="@/assets/img/appitur/09_wireframex.png" class="diagram" alt="wireframe">
+        <img :src="root+'/appitur/09_wireframex.png'" class="diagram" alt="wireframe">
 
         <ChapterRight
             index="05"
@@ -263,18 +263,25 @@
         >
             <Icons>
                 <Icon
-                    :iconSrc="root+'icon/timeline-24px.svg'"
-                    iconAlt="user flow"
-                    iconText="User Flow"
+                    :iconSrc="root+'icon/wysiwyg_black_24dp.svg'"
+                    iconAlt="design system"
+                    iconText="Design System"
                 />
                 <Icon
-                    :iconSrc="root+'icon/important_devices_black_24dp.svg'"
-                    iconAlt="wireframe"
-                    iconText="Wireframe"
+                    :iconSrc="root+'icon/stay_primary_portrait_black_24dp.svg'"
+                    iconAlt="prototype"
+                    iconText="Prototype"
                 />
             </Icons>
             
         </ChapterRight>
+
+
+
+        <Footer
+            pName="FOODVICTION"
+            pLink="https://weijiefu.design/foodviction"
+        />
     </div>
 </template>
 <script>
