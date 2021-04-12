@@ -249,9 +249,32 @@
         
         <img src="@/assets/img/appitur/08_user_flow_new.svg" class="diagram" alt="user flow new">
 
-        <img :src="root+'appitur/09_wireframe.png'" class="diagram" alt="wireframe">
+          <ChapterLeft
+            title="Wireframe"
+            text=""
+        />
 
+        <img src="@/assets/img/appitur/09_wireframex.png" class="diagram" alt="wireframe">
 
+        <ChapterRight
+            index="05"
+            title="Ideation to Action"
+            text=""
+        >
+            <Icons>
+                <Icon
+                    :iconSrc="root+'icon/timeline-24px.svg'"
+                    iconAlt="user flow"
+                    iconText="User Flow"
+                />
+                <Icon
+                    :iconSrc="root+'icon/important_devices_black_24dp.svg'"
+                    iconAlt="wireframe"
+                    iconText="Wireframe"
+                />
+            </Icons>
+            
+        </ChapterRight>
     </div>
 </template>
 <script>
@@ -299,5 +322,8 @@ export default {
     width: 100vw;
 
     
+}
+.diagram{
+    width: 100%;
 }
 </style>
