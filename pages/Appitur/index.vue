@@ -249,7 +249,7 @@
         
         <img src="@/assets/img/appitur/08_user_flow_new.svg" class="diagram" alt="user flow new">
 
-          <ChapterLeft
+        <ChapterLeft
             title="Wireframe"
             text=""
         />
@@ -276,7 +276,10 @@
             
         </ChapterRight>
 
-
+         <ChapterLeft
+            title="Design System"
+            text=""
+        />
 
         <Footer
             pName="FOODVICTION"
