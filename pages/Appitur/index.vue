@@ -140,7 +140,7 @@
                 `- I like to mark questions I got wrong for further review`,
                 `- I prefer 20 questions at a time`,
                 `- time management is crucial to exam prep`,
-                `- put my phone away when I study on my compute`,
+                `- put my phone away when I study on my computer`,
                 ]"
                 color="#333333"
             />
@@ -278,9 +278,11 @@
 
          <ChapterLeft
             title="Design System"
-            text=""
+            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quia voluptas consequatur nostrum! Ipsum, placeat laboriosam natus reprehenderit consectetur temporibus cupiditate! Consequatur, necessitatibus error. Vel quidem atque natus sit consectetur dolore ut commodi, alias illum harum, unde voluptas mollitia necessitatibus provident quaerat maiores aut itaque ipsam debitis, velit ad consequuntur."
         />
-           <ImageMain
+        
+        
+        <ImageMain
             :imageSrc="root+'appitur/10_design_system.png'"
             imageAlt="banner"
         />
