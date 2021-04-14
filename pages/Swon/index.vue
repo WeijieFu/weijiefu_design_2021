@@ -6,10 +6,10 @@
             date="2020"
             title="SWON" 
             :titleFont="10"
-            tag="Redesign web for canadian architecture and planning firm"
-            role="User Research,User Experience Design,User Interface Design"
+            tag="SWON is a canadian architecture firm. "
+            role="Brand Concept, Art & Creative Direction, Web Design, Web Development"
         />
-        <div class="enter"><a>Enter SWON &rarr;</a></div>
+        <div class="enter"><a href="https://swon.ca/" target="_blank">Enter SWON &rarr;</a></div>
         <iframe src="https://swon.ca/" title="SWON" ></iframe>
          
         <Footer
@@ -57,7 +57,9 @@ iframe {
     margin-left: 50vw;
 }
 .enter a{
-    transition: all 0.5s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+    color: #000;
 }
 .enter a:hover {
     color: #999

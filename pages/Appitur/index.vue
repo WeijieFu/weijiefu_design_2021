@@ -292,6 +292,22 @@
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quia voluptas consequatur nostrum! Ipsum, placeat laboriosam natus reprehenderit consectetur temporibus cupiditate! Consequatur, necessitatibus error. Vel quidem atque natus sit consectetur dolore ut commodi, alias illum harum, unde voluptas mollitia necessitatibus provident quaerat maiores aut itaque ipsam debitis, velit ad consequuntur."
         />
 
+
+
+        <VideoMain
+            :isReversed="true"
+            backgroundColor="#3CCAFF"
+            textColor="#fff"
+            :videoSrc="root+'appitur/11_onboarding.mp4'"
+            videoTitle="Organize your CleanUp"
+            videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
+        />
+
+
+
+
+
+
         <Footer
             pName="FOODVICTION"
             pLink="https://weijiefu.design/foodviction"

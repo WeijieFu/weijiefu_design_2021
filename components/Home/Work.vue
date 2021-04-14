@@ -26,7 +26,7 @@
         <Project class="project0" 
                 pIndex="01" 
                 pName="Swon.ca" 
-                pRole="Brand Concept, Art & Creative Direction, Visual Identity Design, UI Design, Web Development"
+                pRole="Brand Concept, Art & Creative Direction, Web Design, Web Development"
                 pLink="https://www.weijiefu.design/swon/"
                 :pArrow="true"
         />
