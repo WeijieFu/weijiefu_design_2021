@@ -281,12 +281,16 @@
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quia voluptas consequatur nostrum! Ipsum, placeat laboriosam natus reprehenderit consectetur temporibus cupiditate! Consequatur, necessitatibus error. Vel quidem atque natus sit consectetur dolore ut commodi, alias illum harum, unde voluptas mollitia necessitatibus provident quaerat maiores aut itaque ipsam debitis, velit ad consequuntur."
         />
         
-        
-        <ImageMain
+        <img :src="root+'appitur/10_design_systemx.png'" class="diagram margin-top" alt="design system">
+        <!-- <ImageMain
             :imageSrc="root+'appitur/10_design_system.png'"
             imageAlt="banner"
-        />
+        /> -->
 
+        <ChapterLeft
+            title="Prototype"
+            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quia voluptas consequatur nostrum! Ipsum, placeat laboriosam natus reprehenderit consectetur temporibus cupiditate! Consequatur, necessitatibus error. Vel quidem atque natus sit consectetur dolore ut commodi, alias illum harum, unde voluptas mollitia necessitatibus provident quaerat maiores aut itaque ipsam debitis, velit ad consequuntur."
+        />
 
         <Footer
             pName="FOODVICTION"
@@ -342,5 +346,8 @@ export default {
 }
 .diagram{
     width: 100%;
+}
+.margin-top{
+    margin-top: 5rem;
 }
 </style>

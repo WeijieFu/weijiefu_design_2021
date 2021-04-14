@@ -27,7 +27,7 @@
                 pIndex="01" 
                 pName="Swon.ca" 
                 pRole="Brand Concept, Art & Creative Direction, Visual Identity Design, UI Design, Web Development"
-                pLink="https://swon.ca/"
+                pLink="https://www.weijiefu.design/swon/"
                 :pArrow="true"
         />
 
