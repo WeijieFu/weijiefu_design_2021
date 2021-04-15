@@ -298,7 +298,7 @@
             :isReversed="true"
             backgroundColor="#eee"
             textColor="#000"
-            :videoSrc="root+'appitur/11_onboarding.mp4'"
+            :videoSrc="root+'appitur/11_onboardingx.mp4'"
             videoTitle="Onboarding"
             videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
         />
@@ -307,8 +307,8 @@
             :isReversed="false"
             backgroundColor="#eee"
             textColor="#000"
-            :videoSrc="root+'appitur/11_onboarding.mp4'"
-            videoTitle="Organize your CleanUp"
+            :videoSrc="root+'appitur/12_studyx.mp4'"
+            videoTitle="Study Session"
             videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
         />
 
