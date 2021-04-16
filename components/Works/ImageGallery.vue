@@ -92,6 +92,7 @@ export default {
 
     .image-container img{
         width: 70vw;
+        height: auto;
         transform: translateX(-70vw);
    
    
@@ -112,4 +113,15 @@ export default {
     .arrow:hover{
         transform:scale(1.1);
     }
+
+      @media only screen and (max-width: 600px) {
+        
+        .arrow,
+        .arrow:hover {
+        transform:scale(0.5);
+        
+    }
+    }
+
+
 </style>
