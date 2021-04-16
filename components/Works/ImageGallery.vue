@@ -94,8 +94,6 @@ export default {
         width: 70vw;
         height: auto;
         transform: translateX(-70vw);
-   
-   
     }
     .index{
         position: absolute;
@@ -116,6 +114,11 @@ export default {
 
       @media only screen and (max-width: 600px) {
         
+        .image-container img{
+        height: calc(70vw/1.4);
+       
+    }
+
         .arrow,
         .arrow:hover {
         transform:scale(0.5);
