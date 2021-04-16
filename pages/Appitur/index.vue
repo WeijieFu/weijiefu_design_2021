@@ -193,20 +193,7 @@
             :length="30"
         />
 
-        <ChapterLeft
-            title=""
-            text="Action Items"
-        >
-            <List
-                :listItems="[
-                `- Provide more explanations (already in database) on all four choices, both right answers and wrong answers.`,
-                `- Add flashcards.`,
-                `- For performance session, it would be helpful if they can be broken down topic by topic.`,
-                `- Sign-up and Log-in is confusing on app.`,
-           
-                ]"
-            />
-        </ChapterLeft>
+        
     
         <ChapterRight
             index="04"
@@ -278,7 +265,7 @@
 
          <ChapterLeft
             title="Design System"
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quia voluptas consequatur nostrum! Ipsum, placeat laboriosam natus reprehenderit consectetur temporibus cupiditate! Consequatur, necessitatibus error. Vel quidem atque natus sit consectetur dolore ut commodi, alias illum harum, unde voluptas mollitia necessitatibus provident quaerat maiores aut itaque ipsam debitis, velit ad consequuntur."
+            text="I started by building a comprehensive components library within Figma that would later reflect in various parts of the app, i.e., colors, typography, setting the grid etc. This included icons, buttons, form elements, error and empty states, show choices cards and content cards. For achieving vertical rhythm, text aligns to a 4px baseline grid and elements align to a 8px baseline grid."
         />
         
         <img :src="root+'appitur/10_design_systemx.png'" class="diagram margin-top" alt="design system">
@@ -289,7 +276,7 @@
 
         <ChapterLeft
             title="Prototype"
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quia voluptas consequatur nostrum! Ipsum, placeat laboriosam natus reprehenderit consectetur temporibus cupiditate! Consequatur, necessitatibus error. Vel quidem atque natus sit consectetur dolore ut commodi, alias illum harum, unde voluptas mollitia necessitatibus provident quaerat maiores aut itaque ipsam debitis, velit ad consequuntur."
+            text=""
         />
 
 
@@ -312,14 +299,14 @@
             videoDescription="From the user interview and testing, we concluded that progress tracking is an essential function for the users, because it helps them to see the bigger picture of where they are at and helps manage their time. The progess bars are added to the overall progress and also for each section, subsection, so that the users can always be in control of the pace of study. Another important feature is to show the feedbacks for the wrong answers. Compared to the old version, user can have thorough understanding of the knowledge point from looking at both sides of the questions."
         />
 
-        <!-- <VideoMain
+        <VideoMain
             :isReversed="true"
             backgroundColor="#eee"
             textColor="#000"
-            :videoSrc="root+'appitur/11_onboarding.mp4'"
-            videoTitle="Organize your CleanUp"
-            videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
-        /> -->
+            :videoSrc="root+'appitur/13_exam.mp4'"
+            videoTitle="Exam Session"
+            videoDescription="User can use the exam session to test their knowledge and track performance. The user is given the flexibility to choose how long the exam session can be, in order to fit the excercise into their schedule. The performance tracking provides the overview of a selected time range, so that they always have the learning progress at heart."
+        />
 
 
 
