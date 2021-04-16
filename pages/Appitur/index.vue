@@ -300,7 +300,7 @@
             textColor="#000"
             :videoSrc="root+'appitur/11_onboardingx.mp4'"
             videoTitle="Onboarding"
-            videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
+            videoDescription="First-time user will be shown the onboarding tutorial. The tutorial helps them to understand the main feature of the app and ease them in the study pace. No login is needed when they just want to 'have a look of the app' and are not sure if they will pay money for more content. We are not scaring the users away with all the sign up forms, so that we can have lower bounce rate and more conversion later on in the long run."
         />
 
         <VideoMain
@@ -309,17 +309,17 @@
             textColor="#000"
             :videoSrc="root+'appitur/12_studyx.mp4'"
             videoTitle="Study Session"
-            videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
+            videoDescription="From the user interview and testing, we concluded that progress tracking is an essential function for the users, because it helps them to see the bigger picture of where they are at and helps manage their time. The progess bars are added to the overall progress and also for each section, subsection, so that the users can always be in control of the pace of study. Another important feature is to show the feedbacks for the wrong answers. Compared to the old version, user can have thorough understanding of the knowledge point from looking at both sides of the questions."
         />
 
-        <VideoMain
+        <!-- <VideoMain
             :isReversed="true"
             backgroundColor="#eee"
             textColor="#000"
             :videoSrc="root+'appitur/11_onboarding.mp4'"
             videoTitle="Organize your CleanUp"
             videoDescription="User can access Dashboard in Message or Profile tab to view and manage the CleanUp team. The organizer will have the authority to assign different roles to team membersand divide CleanUp territories. Each territory consists of four functional roles, a team leader, reporter, security and supply manageer. Reporters are responsible for taking pictures and writing description of the debris, then the report will be sent to the databank of Ocean Blue Project."
-        />
+        /> -->
 
 
 
