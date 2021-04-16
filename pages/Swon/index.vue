@@ -6,7 +6,7 @@
             date="2020"
             title="SWON" 
             :titleFont="10"
-            tag="SWON is a canadian architecture firm. "
+            tag="SWON is a canadian architecture firm. We designed and developed this website with a touch of WebGL, which added a third dimension to the screen. The landing page is designed to be a audio-visual experience to tell the story of the architect's philosophy on the history and context of the architecture. In the project page, user can interact with a textureless 3d model, demonstrating the primitive form of the architectural space. "
             role="Brand Concept, Art & Creative Direction, Web Design, Web Development"
         />
         <div class="enter"><a href="https://swon.ca/" target="_blank">Enter SWON &rarr;</a></div>

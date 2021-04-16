@@ -46,6 +46,7 @@ export default {
     @media only screen and (max-width: 600px) {
         .container{
             margin-left: 2rem;
+            width: calc(100vw - 2rem) !important;
         }
         .text{
             width: 80vw;

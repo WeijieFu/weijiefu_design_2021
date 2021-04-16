@@ -48,7 +48,7 @@ export default {
             margin-top:0;
         }
         .text{
-            font-size: 5rem;
+            font-size: 4rem;
         }
     }
 </style>

@@ -41,6 +41,7 @@ export default {
         }
         .container{
             margin-left: 2rem;
+            width: calc(100vw - 2rem) !important;
         }
     }
 </style>

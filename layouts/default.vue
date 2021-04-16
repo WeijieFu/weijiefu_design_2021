@@ -50,5 +50,6 @@ html {
 
 body{
   overflow-x: hidden;
+  width: 100vw;
 }
 </style>
