@@ -2,9 +2,32 @@
     <div class="container">
         <Mouse :isBlack="true"/>
         <HomeButton/>
-        <!-- <iframe src="https://swon.ca/" title="SWON" ></iframe> -->
-        <div class="enter"><a href="https://weijiefu.design" target="_blank">COMING SOON &rarr;</a></div>
+
+        <iframe src="https://elastic-dijkstra-f80045.netlify.app/" title="SWON" ></iframe>
+        <div class="enter">
+            <a href="https://elastic-dijkstra-f80045.netlify.app/" target="_blank">DUCKY3D's 80s Loop &rarr;</a>
+            <p>Blender, ReactJS, ThreeJS, WebGL</p>
+        </div>
      
+
+        <iframe src="https://friendly-panini-d29995.netlify.app/" title="SWON" ></iframe>
+        <div class="enter">
+            <a href="https://friendly-panini-d29995.netlify.app/" target="_blank">TRIANGLE TUNNEL &rarr;</a>
+            <p>Blender, ReactJS, ThreeJS, WebGL</p>
+        </div>
+
+        <iframe src="https://tender-leavitt-8d4f37.netlify.app/" title="SWON" ></iframe>
+        <div class="enter">
+            <a href="https://tender-leavitt-8d4f37.netlify.app/" target="_blank">KISS &rarr;</a>
+            <p>ThreeJS, WebGL, Raymarching</p>
+        </div>
+
+
+        <iframe src="https://musing-leavitt-544406.netlify.app/" title="SWON" ></iframe>
+        <div class="enter">
+            <a href="https://musing-leavitt-544406.netlify.app/" target="_blank">SWIRL &rarr;</a>
+            <p>ThreeJS, WebGL, Particles</p>
+        </div>
          
     
     </div>
@@ -30,6 +53,7 @@ export default {
     width: 100vw;
 
 
+
     
 }
 iframe {
@@ -42,15 +66,34 @@ iframe {
 }
 .enter{
     font-family: 'Exo 2', sans-serif;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 50vw;
+    padding-bottom: 5rem;
+    line-height: 150%;
+
 }
 .enter a{
     transition: all 0.25s ease-out;
     text-decoration: none;
     color: #000;
+    font-size: 1.25rem;
 }
 .enter a:hover {
     color: #999
 }
+
+.enter p{
+    color: #ddd;
+}
+
+ @media only screen and (max-width: 600px) {
+        .enter {
+              margin-left: 10vw;
+              padding-bottom: 2rem;
+        }
+        .enter p{
+            font-size: 0.75rem;
+        }
+      
+    }
 </style>
