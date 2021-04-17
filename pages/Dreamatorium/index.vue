@@ -12,8 +12,7 @@
 <script>
 import Mouse from '@/components/Mouse.vue';
 import HomeButton from '@/components/Works/HomeButton.vue';
-import Title from '@/components/Works/Title.vue';
-import Footer from '@/components/Works/Footer.vue';
+
 
 
 export default {
