@@ -8,7 +8,7 @@
             <a href="https://elastic-dijkstra-f80045.netlify.app/" target="_blank" >DUCKY3D's 80s Loop &rarr;</a>
             <p>Blender, ReactJS, ThreeJS, WebGL</p>
         </div>
-     
+
 
         <iframe src="https://friendly-panini-d29995.netlify.app/" title="Triangle tunnel"  class="no-pointer"></iframe>
         <div class="enter">
@@ -40,8 +40,14 @@
             <a href="https://hungry-noyce-44af00.netlify.app/" target="_blank">MOVIE NIGHT &rarr;</a>
             <p>ThreeJS, Blender, Texture Baking</p>
         </div>
-         
-    
+
+         <iframe src="https://keen-bohr-2a2cac.netlify.app/" title="Kinectic typography"  ></iframe>
+        <div class="enter">
+            <a href="https://keen-bohr-2a2cac.netlify.app/" target="_blank">ROCK PAPER SCISSORS &rarr;</a>
+            <p>ThreeJS, Blender, Rigging</p>
+        </div>
+
+
     </div>
 </template>
 <script>
@@ -54,7 +60,7 @@ export default {
     components:{
         Mouse,
         HomeButton,
-     
+
     }
 }
 </script>
@@ -66,7 +72,7 @@ export default {
 
 
 
-    
+
 }
 iframe {
     margin-top: 5rem;
@@ -109,6 +115,6 @@ iframe {
         .enter p{
             font-size: 0.75rem;
         }
-      
+
     }
 </style>
