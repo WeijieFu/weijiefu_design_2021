@@ -32,6 +32,7 @@
                     <div class="social_item"><a href="https://www.linkedin.com/in/weijie-fu-a16868a4/" target="_blank">linkedin</a></div>
                     <div class="social_item"><a href="https://www.instagram.com/weijiefu_92/" target="_blank">instagram</a></div>
                     <div class="social_item"><a href="https://dribbble.com/WeijieFu" target="_blank">dribbble</a></div>
+                    <div class="social_item"><a href="https://twitter.com/Weijie__Fu" target="_blank">twitter</a></div>
                 </div>
             </div>
         </div>
@@ -39,13 +40,13 @@
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped>
     .contact {
         z-index: 101;
-        
+
         width: 100vw;
         height: 100vh;
         color: var(--color-text-grey);
@@ -106,7 +107,7 @@ export default {
         .contact_chapter_title{
             font-size: 1.5rem;
         }
-        
+
     }
     @media only screen and (max-width: 600px) {
         .contact{
@@ -126,7 +127,7 @@ export default {
         .contact_chapter_title{
             text-align: left;
         }
-        
+
         .social{
             justify-content: flex-start;
 
@@ -136,5 +137,5 @@ export default {
             margin-right: 1rem;
         }
     }
-    
+
 </style>
