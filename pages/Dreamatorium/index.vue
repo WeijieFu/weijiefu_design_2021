@@ -42,7 +42,7 @@
         </div>
         <iframe src="https://brave-perlman-c64a71.netlify.app/" title="Kinectic typography"  ></iframe>
         <div class="enter">
-            <a href="https://brave-perlman-c64a71.netlify.app/" target="_blank">HOT SUMMER</a>
+            <a href="https://brave-perlman-c64a71.netlify.app/" target="_blank">HOT SUMMER &rarr;</a>
             <p>ThreeJS, Blender, Texture Baking</p>
         </div>
          <iframe src="https://keen-bohr-2a2cac.netlify.app/" title="Kinectic typography"  ></iframe>
