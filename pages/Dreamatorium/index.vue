@@ -40,12 +40,17 @@
             <a href="https://hungry-noyce-44af00.netlify.app/" target="_blank">MOVIE NIGHT &rarr;</a>
             <p>ThreeJS, Blender, Texture Baking</p>
         </div>
-
+        <iframe src="https://brave-perlman-c64a71.netlify.app/" title="Kinectic typography"  ></iframe>
+        <div class="enter">
+            <a href="https://brave-perlman-c64a71.netlify.app/" target="_blank">HOT SUMMER</a>
+            <p>ThreeJS, Blender, Texture Baking</p>
+        </div>
          <iframe src="https://keen-bohr-2a2cac.netlify.app/" title="Kinectic typography"  ></iframe>
         <div class="enter">
             <a href="https://keen-bohr-2a2cac.netlify.app/" target="_blank">ROCK PAPER SCISSORS &rarr;</a>
             <p>ThreeJS, Blender, Rigging</p>
         </div>
+
 
 
     </div>
