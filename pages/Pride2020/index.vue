@@ -11,186 +11,93 @@
         />
 
         <ImageMain
-            :imageSrc="root+'appitur/01_header.png'"
+            :imageSrc="root+'pride_2020/00 title.jpg'"
             imageAlt="banner"
         />
 
         <ChapterRight
             index="01"
-            title="Problem Space"
+            title="Goal"
             text=""
         />
 
         <ChapterLeft
             title=""
-            text="Appitur's three mobile apps are losing users and generating less revenue, due to a myriad of reasons: "
+            text=""
         >
             <List
                 :listItems="[
-                `1. Confusing navigation : Navigating in the app is very confusing and important call to action buttons are often missing or ignored by the users.`,
-                `2. User flow mismatching user needs : The existing app didn't take special needs from the target customers into consideration, therefore the function is less tailored or hard to use.`,
-                `3. Outdated UI : The existing app needs a visual upgrade to create professional and trustworthy  impression.`,
-                `4. Lack of engagement engine : Besides plain study and exam materials, the existing app doesn't offer much positive feedback to comply with user's learning curve.`
+                `1. Build a platform to enable social activities during
+               the pandemic.`,
+                `2. Connect the virtual world and the real world.`,
+                `3. Redefine the relationship between home and city.`,
+
                 ]"
             />
         </ChapterLeft>
 
         <ChapterRight
             index="02"
-            title="Lean Cycle"
-            text="By working closely with the shareholders and developer team, we implemented a Lean Cycle developing schedule, where the process is iterative and measurable."
+            title="Why Web AR?"
+            text="Web AR is to develop Augmented Reality on the Web. For developer it's a solution to build cross-platform applications. Web AR runs on any modern smartphone with a web browser. And it saves all the efforts and costs to publish applications on App stores. For user, it means easy access to the AR experience by just clicking the link or scanning a QR code."
         />
 
         <ImageMain
-            :imageSrc="root+'appitur/02_lean_cycle.jpg'"
+            :imageSrc="root+'pride_2020/intro-image.gif'"
             imageAlt="banner"
         />
 
         <ChapterLeft
-            title="Initial Usability Research Phase"
-            text="Identify pain points and critical user needs. Understand the base APIs from the engineer.  Save nice-to-have features for further development."
-        />
+            title=""
+            text=""
+        >
+            <List
+                :listItems="[
+                `source: https://ar-js-org.github.io/AR.js-Docs/`,
 
-        <ChapterLeft
-            title="Project Foundation Phase"
-            text="Implement findings from critical pain points, redesign and develop basic user interface for the initial launch."
-        />
 
-        <ChapterLeft
-            title="Iteration Phase"
-            text="Getting feedbacks and make improvements on top of the initial design, develop and launch new features."
-        />
+                ]"
+            />
+        </ChapterLeft>
+
 
         <ChapterRight
             index="03"
-            title="Research"
+            title="Background Research"
             text=""
         >
-            <Icons>
-                <Icon
-                    :iconSrc="root+'icon/question_answer-24px.svg'"
-                    iconAlt="semi-structured interview"
-                    iconText="Semi-structured Interview"
-                />
-                <Icon
-                    :iconSrc="root+'icon/perm_identity-24px.svg'"
-                    iconAlt="stakeholder interview"
-                    iconText="Stakeholder Interview"
-                />
-            </Icons>
-            <Icons>
-                <Icon
-                    :iconSrc="root+'icon/quiz_black_24dp.svg'"
-                    iconAlt="usability testing"
-                    iconText="Usability Testing"
-                />
-                <Icon
-                    :iconSrc="root+'icon/phone_iphone_black_24dp.svg'"
-                    iconAlt="case study"
-                    iconText="Case Study"
-                />
-            </Icons>
+
         </ChapterRight>
 
 
         <ChapterLeft
-            title="Semi-structured Interview"
-            text="In oder to get a clear picture of how our primary users are studying for the exams, we started with a round of semi-structured interviews with the target users to understand their's motivation and expectation about online education and assessment services."
-        />
+            title="Pride and City"
+            text=" The Pride Parade is the peak moment of all pride events. It draws hundreds of millions of people every year to gather together in the city. There are 3 key elements are essential to the definition of Pride Parade."
+        >
+            <List
+                :listItems="[
+                `1. The March, consists of LGBTQIA folks and allies, equal right activists, supporters, and performers who are not afraid of sharing their stories. Pride is a political stage and also a stage to send message to the people who are still suffering from being different`,
+                `2. The Paticipants. I have been a paticipant of pride parade several times. Even just standing in the crowd, watching the marching float and performers, I can feel the energy and empowerment. The sense of presence is the way how people communicate and connect.`,
+                `3. The City. The urban life which used to be so easily forgot before the pandemic, now is very much missed and appreciated. The city, streets and squares, malls and restaurants, museums and parks, are the containers of life. And it shapes who we are and how we interact in a very subtle yet profound way.`,
+
+                ]"
+            />
+        </ChapterLeft>
 
         <ImageMain
-            :imageSrc="root+'appitur/03_interview_key_finding.png'"
+            :imageSrc="root+'pride_2020/01 pride and city.svg'"
             imageAlt="banner"
         />
 
-        <ChapterLeft
-            title=""
-            text="Since the existing Appitur apps are for people who are doing professional certification exams (CIA, CMA, etc) and Appitur's clients are established training and education institutions in the field, our target users are professionals in their 20s or 30s looking for career breakthroughs. We gathered a group of 5 to ask how they prepare for professional exams both online and offline, the differences and the frustrations they've encountered."
-        />
-
-
-        <ChapterLeft
-            title=""
-            text="Key Findings"
+         <ChapterLeft
+            title="The Challenge"
+            text="Quarantine and social distancing have broken the urban life into pieces. People are not allowed to gather together, but this is exactly the moment we need solidarity and support. I believe there are ways to bring people together, and create a different but enhanced pride experience."
         >
         </ChapterLeft>
-        <ChapterLeft
-            title=""
-            text="How do people study for professional certification exams?"
-        >
-            <List
-                :listItems="[
-                `- Official study guide book from exam institutes`,
-                `- Third party IRL classes`,
-                `- Third party study guide book`,
-                `- Mock exams and Tests from third party`,
-                `- Flashcards either made by themselves or from third party`,
-                ]"
-            />
-        </ChapterLeft>
-
-        <ChapterLeft
-            title=""
-            text="Behavioural pattern found among target users. Key quotes : "
-        >
-            <List
-                :listItems="[
-                `- can't study much on weekdays while I am working`,
-                `- 100 hours of study is my goal`,
-                `- I like to mark questions I got wrong for further review`,
-                `- I prefer 20 questions at a time`,
-                `- time management is crucial to exam prep`,
-                `- put my phone away when I study on my computer`,
-                ]"
-                color="#333333"
-            />
-        </ChapterLeft>
-
-        <ChapterLeft
-            title="Stakeholder Interview"
-            text="To understand the business goal for this app, we talked to Kevin, who is the content provider of Hock CIA and CMA apps,  and Tom, the founder of Appitur E-learning Platform. Due to Covid-19 regulation, all interviews were conducted online."
-        />
-        <ImageMain
-            :imageSrc="root+'appitur/04_stakeholder.png'"
-            imageAlt="banner"
-        />
-        <ChapterLeft
-            title=""
-            text="From our talk with Kevin, we came to understand the interest of Appitur's clients. Kevin, who already has a brand Hock International, would like the app to be an addition to the whole family package (books, videos and test questions) he is offering to his students. In the long term, he hopes the Appitur app could somehow inherit their brand identity. He also shared with us some concerns his students have: "
-        >
-            <List
-                :listItems="[
-                `- Provide more explanations (already in database) on all four choices, both right answers and wrong answers.`,
-                `- Add flashcards.`,
-                `- For performance session, it would be helpful if they can be broken down topic by topic.`,
-                `- Sign-up and Log-in is confusing on app.`,
-
-                ]"
-            />
-        </ChapterLeft>
-
-        <ChapterLeft
-            title="Usability Testing"
-            text="We conducted usability tests with five participants to test the existing product, understand user behaviour and define success for both the users and the stakeholders."
-        />
-        <ChapterLeft
-            title=""
-            text="The test session is designed to gather general information from the participants and test usability of Appitur apps. In this case, we are testing the HOCK CIA (Certified Internal Auditor) app since all four apps are quite similar."
-        />
 
          <ImageMain
-            :imageSrc="root+'appitur/05_user_testingx.png'"
+            :imageSrc="root+'pride_2020/02 pride with sd.svg'"
             imageAlt="banner"
-        />
-
-        <ChapterLeft
-            title=""
-            text="Due to covid-19 regulation, the usability tests are conducted via online meeting with interactive web prototypes. The participants could interact with the prototype as they interact with a regular app."
-        />
-
-        <ImageGallery
-            :src="root+'appitur/06_user_testing_report/UTR - '"
-            :length="30"
         />
 
 
@@ -198,124 +105,85 @@
         <ChapterRight
             index="04"
             title="Ideation"
-            text=""
+            text="Inspired by the art installation, Lichtgrenze, for the 25th aniversary 'Fall of the Berlin Wall', and one of the most famouse anit-war songs in the 1980s, 99 Luftballons. Balloon has served as a symbol of hope, wonder, and freedom. In modern pop culture, it is also used by the fandom as an item of support. So I decided to implant balloon as a media."
         >
-            <Icons>
-                <Icon
-                    :iconSrc="root+'icon/timeline-24px.svg'"
-                    iconAlt="user flow"
-                    iconText="User Flow"
-                />
-                <Icon
-                    :iconSrc="root+'icon/important_devices_black_24dp.svg'"
-                    iconAlt="wireframe"
-                    iconText="Wireframe"
-                />
-            </Icons>
-
         </ChapterRight>
 
-        <ChapterLeft
-            title="User Flow"
-            text="How might we improve the current user flow that reduce user's frustration, and also build a system which is able to incoporate more features through development cycles without spending a lot of efforts on changing what is already done. A minimal, lean and flexible model is required to create this new user flow."
-        />
 
-
+           <img :src="root+'pride_2020/03 inspiration.svg'" class="diagram margin-top" alt="design system">
 
         <ChapterLeft
-            title=""
-            text="Existing User Flow"
-        />
-
-        <img src="@/assets/img/appitur/07_user_flow_old.svg" class="diagram" alt="user flow old">
-
-        <ChapterLeft
-            title=""
-            text="New User Flow"
-        />
-
-        <img src="@/assets/img/appitur/08_user_flow_new.svg" class="diagram" alt="user flow new">
-
-        <ChapterLeft
-            title="Wireframe"
+            title="Concept Sketch"
             text=""
         />
 
-        <img :src="root+'/appitur/09_wireframex.png'" class="diagram" alt="wireframe">
+        <ImageMain
+            :imageSrc="root+'pride_2020/04 concept.svg'"
+            imageAlt="banner"
+         />
+
+           <ChapterLeft
+            title="Concept User Flow"
+            text=""
+        />
+        <img :src="root+'pride_2020/05 user flow.svg'" class="diagram margin-top" alt="design system">
+
+
+
 
         <ChapterRight
             index="05"
-            title="Ideation to Action"
+            title="Wireframe"
             text=""
         >
-            <Icons>
-                <Icon
-                    :iconSrc="root+'icon/wysiwyg_black_24dp.svg'"
-                    iconAlt="design system"
-                    iconText="Design System"
-                />
-                <Icon
-                    :iconSrc="root+'icon/stay_primary_portrait_black_24dp.svg'"
-                    iconAlt="prototype"
-                    iconText="Prototype"
-                />
-            </Icons>
-
         </ChapterRight>
 
-         <ChapterLeft
-            title="Design System"
-            text="I started by building a comprehensive components library within Figma that would later reflect in various parts of the app, i.e., colors, typography, setting the grid etc. This included icons, buttons, form elements, error and empty states, show choices cards and content cards. For achieving vertical rhythm, text aligns to a 4px baseline grid and elements align to a 8px baseline grid."
-        />
 
-        <img :src="root+'appitur/10_design_systemx.png'" class="diagram margin-top" alt="design system">
-        <!-- <ImageMain
-            :imageSrc="root+'appitur/10_design_system.png'"
-            imageAlt="banner"
-        /> -->
+         <img :src="root+'pride_2020/06 wireframe.svg'" class="diagram margin-top" alt="design system">
 
-        <ChapterLeft
+
+
+         <ChapterRight
+            index="06"
             title="Prototype"
             text=""
-        />
-
-
+        >
+        </ChapterRight>
 
         <VideoMain
             :isReversed="true"
-            backgroundColor="#eee"
-            textColor="#000"
-            :videoSrc="root+'appitur/11_onboardingx.mp4'"
-            videoTitle="Onboarding"
-            videoDescription="First-time user will be shown the onboarding tutorial. The tutorial helps them to understand the main feature of the app and ease them in the study pace. No login is needed when they just want to 'have a look of the app' and are not sure if they will pay money for more content. We are not scaring the users away with all the sign up forms, so that we can have lower bounce rate and more conversion later on in the long run."
+            backgroundColor="#000"
+            textColor="#fff"
+            :videoSrc="root+'pride_2020/07 prototype 1.mp4'"
+            videoTitle="Look Around | Camera View"
+            videoDescription="With phone camera and GPS information, user can view balloons that were sent off by other users. The balloons fly slower towards the marching route to join the main parade."
         />
 
         <VideoMain
             :isReversed="false"
-            backgroundColor="#eee"
-            textColor="#000"
-            :videoSrc="root+'appitur/12_studyx.mp4'"
-            videoTitle="Study Session"
-            videoDescription="From the user interview and testing, we concluded that progress tracking is an essential function for the users, because it helps them to see the bigger picture of where they are at and helps manage their time. The progess bars are added to the overall progress and also for each section, subsection, so that the users can always be in control of the pace of study. Another important feature is to show the feedbacks for the wrong answers. Compared to the old version, user can have thorough understanding of the knowledge point from looking at both sides of the questions."
+            backgroundColor="#000"
+            textColor="#fff"
+            :videoSrc="root+'pride_2020/08 prototype 2.mp4'"
+            videoTitle="Stories | Zoom In"
+            videoDescription="Click on a group of balloons. The view will zoom in, and show the stories from the tapped area. Click on one of the balloon, user can access to 3D view by dragging the balloon, and also read the description of the story, the live comments, add comments or double tap to like the story."
         />
 
         <VideoMain
             :isReversed="true"
-            backgroundColor="#eee"
-            textColor="#000"
-            :videoSrc="root+'appitur/13_exam.mp4'"
-            videoTitle="Exam Session"
-            videoDescription="User can use the exam session to test their knowledge and track performance. The user is given the flexibility to choose how long the exam session can be, in order to fit the excercise into their schedule. The performance tracking provides the overview of a selected time range, so that they always have the learning progress at heart."
+            backgroundColor="#000"
+            textColor="#fff"
+            :videoSrc="root+'pride_2020/09 prototype 3.mp4'"
+            videoTitle="My Story | Add Balloon"
+            videoDescription="User can add their own balloon by clicking the '+' button, and the button will help user walk through the creating process. User can choose the color of the balloon, add photo, video and text. In the end, user will send away the balloon. As the balloon is off, other user can react to the balloon. User will receive the likes and comments from others."
         />
-
 
 
 
 
 
         <Footer
-            pName="FOODVICTION"
-            pLink="https://weijiefu.design/foodviction"
+            pName="DREAMATORIUM"
+            pLink="https://weijiefu.design/dreamatorium"
         />
     </div>
 </template>
