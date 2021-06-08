@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from "three";
 ////////
 const vertexShader = `
 //
@@ -210,7 +210,7 @@ void main() {
   noise = (1.0 *  - waves) * turbulence( decay * abs(normal + time));
   qnoise = (2.0 *  - eqcolor) * turbulence( decay * abs(normal + time));
   float b = pnoise( complex * (position) + vec3( 1.0 * time ), vec3( 100.0 ) );
-  
+
   if (fragment == true) {
     displacement = - sin(noise) + normalize(b * 0.5);
   } else {
@@ -224,17 +224,17 @@ void main() {
 
 }
 
-`
+`;
 const fragmentShader = `
 varying float qnoise;
-  
+
   uniform float time;
   uniform bool redhell;
 
   void main() {
     float r, g, b;
 
-    
+
     if (!redhell == true) {
       r = cos(qnoise + 0.5);
       g = cos(qnoise - 0.5);
@@ -246,229 +246,230 @@ varying float qnoise;
     }
     gl_FragColor = vec4(r, r, r, 1.0);
   }
-`
-
-
+`;
 
 ///////
 
 class SceneInit {
-    constructor(rootEl, options){
-        this.root = rootEl;
-        this.width = rootEl.clientWidth;
-        this.height = rootEl.clientHeight;
-        this.background = 0x000000;
-        this.start = Date.now();
+  constructor(rootEl, options) {
+    this.root = rootEl;
+    this.width = rootEl.clientWidth;
+    this.height = rootEl.clientHeight;
+    this.background = 0x000000;
+    this.start = Date.now();
 
-        this.options = options;
-        this.scrollPosition = 0;
+    this.options = options;
+    this.scrollPosition = 0;
 
-        this.aboutPosition = document.getElementById('about').getBoundingClientRect().top;
-        this.workPosition = document.getElementById('work').getBoundingClientRect().top;
-        this.contactPosition = document.getElementById('contact').getBoundingClientRect().top;
+    this.aboutPosition = document
+      .getElementById("about")
+      .getBoundingClientRect().top;
+    this.workPosition = document
+      .getElementById("work")
+      .getBoundingClientRect().top;
+    this.contactPosition = document
+      .getElementById("contact")
+      .getBoundingClientRect().top;
 
-        this.aboutPositionEnd = document.getElementById('about').getBoundingClientRect().bottom;
-        this.workPositionEnd = document.getElementById('work').getBoundingClientRect().bottom;
-        this.contactPositionEnd = document.getElementById('contact').getBoundingClientRect().bottom;
-        this.headerPositionEnd = document.getElementById('header').getBoundingClientRect().bottom;
+    this.aboutPositionEnd = document
+      .getElementById("about")
+      .getBoundingClientRect().bottom;
+    this.workPositionEnd = document
+      .getElementById("work")
+      .getBoundingClientRect().bottom;
+    this.contactPositionEnd = document
+      .getElementById("contact")
+      .getBoundingClientRect().bottom;
+    this.headerPositionEnd = document
+      .getElementById("header")
+      .getBoundingClientRect().bottom;
 
+    this.init();
+  }
 
-        this.init();
-        
+  init() {
+    this.createWorld();
+    this.createPrimitive();
+    // createGUI();
+    //---
 
-    }
+    this.animation();
+  }
 
-    init(){
-        this.createWorld();
-        this.createPrimitive();
-        // createGUI();
-        //---
+  createWorld() {
+    this.scene = new THREE.Scene();
+    //scene.fog = new THREE.Fog(Theme._darkred, 8, 20);
+    this.scene.background = new THREE.Color(this.background);
 
-        this.animation();
-    }
+    this.camera = new THREE.PerspectiveCamera(
+      55,
+      this.width / this.height,
+      1,
+      1000
+    );
+    this.camera.position.z = 12;
 
-    createWorld() {
-      
-        this.scene = new THREE.Scene();
-        //scene.fog = new THREE.Fog(Theme._darkred, 8, 20);
-        this.scene.background = new THREE.Color(this.background);
-      
-        this.camera = new THREE.PerspectiveCamera(55, this.width/this.height, 1, 1000);
-        this.camera.position.z = 12;
-    
-        this.renderer = new THREE.WebGLRenderer({antialias:true, alpha:false});
-        this.renderer.setSize(this.width, this.height);
-        
-        this.root.appendChild(this.renderer.domElement);
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+    this.renderer.setSize(this.width, this.height);
 
-        window.addEventListener('resize', this.onWindowResize.bind(this), false);
-        // window.addEventListener('wheel', this.onWindowScroll.bind(this), false);
-        window.addEventListener('scroll', this.onWindowScroll.bind(this), false);
+    this.root.appendChild(this.renderer.domElement);
 
+    window.addEventListener("resize", this.onWindowResize.bind(this), false);
+    // window.addEventListener('wheel', this.onWindowScroll.bind(this), false);
+    window.addEventListener("scroll", this.onWindowScroll.bind(this), false);
+  }
 
-    }
-  
-    onWindowResize() {
-        this.width = this.root.clientWidth;
-        this.height = this.root.clientHeight;
-        this.renderer.setSize(this.width, this.height);
-        this.camera.aspect = this.width / this.height;
-        this.camera.updateProjectionMatrix();
-    }
+  onWindowResize() {
+    this.width = this.root.clientWidth;
+    this.height = this.root.clientHeight;
+    this.renderer.setSize(this.width, this.height);
+    this.camera.aspect = this.width / this.height;
+    this.camera.updateProjectionMatrix();
+  }
 
-   onWindowScroll(){
-      this.scrollPosition = window.scrollY;
+  onWindowScroll() {
+    this.scrollPosition = window.scrollY;
 
-
-      if(this.scrollPosition >= 0 && this.scrollPosition < this.height-60){
-        let smooth = setInterval(
-          ()=>{
-            if(Math.abs(this.options.perlin.decay-0.01)>0.001){
-              this.options.perlin.decay *= (this.options.perlin.decay-0.01)>0? 0.99: 1.01;
-              if(this.options.perlin.waves != 20){
-                this.options.perlin.waves =20
-              }
-            }else{
-              clearInterval(smooth);
-            }
-          }, 0.17
-        )
-      }
-
-
-
-    if(this.scrollPosition >= this.aboutPosition-60 && this.scrollPosition < this.aboutPositionEnd){
-      let smooth = setInterval(
-        ()=>{
-          if(Math.abs(this.options.perlin.decay-0.2)>0.01){
-              this.options.perlin.decay *= (this.options.perlin.decay-0.2)>0? 0.99: 1.01;
-              if(this.options.perlin.waves != 20){
-                this.options.perlin.waves =20
-              }
-          }else{
-            clearInterval(smooth);
+    if (this.scrollPosition >= 0 && this.scrollPosition < this.height - 60) {
+      let smooth = setInterval(() => {
+        if (Math.abs(this.options.perlin.decay - 0.01) > 0.001) {
+          this.options.perlin.decay *=
+            this.options.perlin.decay - 0.01 > 0 ? 0.99 : 1.01;
+          if (this.options.perlin.waves != 20) {
+            this.options.perlin.waves = 20;
           }
-        }, 0.17
-      )
-    }
-    if(this.scrollPosition >= this.workPosition-60 && this.scrollPosition < this.workPositionEnd){
-      let smooth = setInterval(
-        ()=>{
-          if(Math.abs(this.options.perlin.decay-0.6)>0.01){
-              this.options.perlin.decay *= (this.options.perlin.decay-0.6)>0? 0.99: 1.01;
-              if(this.options.perlin.waves != 20){
-                this.options.perlin.waves =20
-              }
-          }else{
-            clearInterval(smooth);
-          }
-        }, 0.17
-      )
-    }
-    if(this.scrollPosition >= this.contactPosition-60){
-      let smooth = setInterval(
-        ()=>{
-          if(Math.abs(this.options.perlin.decay-0.9)>0.01){
-       
-              this.options.perlin.decay *= (this.options.perlin.decay-0.9)>0? 0.99: 1.01;
-              if(this.options.perlin.waves != 4){
-                this.options.perlin.waves =4
-              }
-            
-           
-          }else{
-            clearInterval(smooth);
-          }
-        }, 0.17
-      )
-    }
-    
-
-
-
-
-   }
-
-    createPrimitive(){
-        let that = this;
-
-
-        let primitiveElement = function() {
-            this.mesh = new THREE.Object3D();
-            that.mat = new THREE.ShaderMaterial( {
-                wireframe: false,
-               //fog: true,
-                uniforms: {
-                    time: {
-                        type: "f",
-                        value: 0.0
-                    },
-                    pointscale: {
-                        type: "f",
-                        value: 0.0
-                    },
-                    decay: {
-                        type: "f",
-                        value: 0.0
-                    },
-                    complex: {
-                        type: "f",
-                        value: 0.0
-                    },
-                    waves: {
-                        type: "f",
-                        value: 0.0
-                    },
-                    eqcolor: {
-                        type: "f",
-                        value: 0.0
-                    },
-                    fragment: {
-                        type: "i",
-                        value: true
-                    },
-                    redhell: {
-                        type: "i",
-                        value: true
-                    }
-                },
-                vertexShader: vertexShader,
-                fragmentShader: fragmentShader,
-            });
-            let geo = new THREE.IcosahedronBufferGeometry(3,80);
-            let mesh = new THREE.Points(geo, that.mat);
-        
-            this.mesh.add(mesh);
+        } else {
+          clearInterval(smooth);
         }
-
-        this.primitive = new primitiveElement();
-        this.scene.add(this.primitive.mesh);
+      }, 0.17);
     }
-    animation() {
 
-        requestAnimationFrame(()=>this.animation());
-        this.performance = Date.now() * 0.003;
-        
-        this.primitive.mesh.rotation.y += this.options.perlin.vel;
-        this.primitive.mesh.rotation.x = (Math.sin(this.performance * this.options.spin.sinVel) * this.options.spin.ampVel )* Math.PI / 180;
-        //---
-        this.mat.uniforms['time'].value = this.options.perlin.speed * (Date.now() - this.start);
-        this.mat.uniforms['pointscale'].value = this.options.perlin.perlins;
-        this.mat.uniforms['decay'].value = this.options.perlin.decay;
-        this.mat.uniforms['complex'].value = this.options.perlin.complex;
-        this.mat.uniforms['waves'].value = this.options.perlin.waves;
-        this.mat.uniforms['eqcolor'].value = this.options.perlin.eqcolor;
-        this.mat.uniforms['fragment'].value = this.options.perlin.fragment;
-        this.mat.uniforms['redhell'].value = this.options.perlin.redhell;
-        //---
+    if (
+      this.scrollPosition >= this.aboutPosition - 60 &&
+      this.scrollPosition < this.aboutPositionEnd
+    ) {
+      let smooth = setInterval(() => {
+        if (Math.abs(this.options.perlin.decay - 0.2) > 0.01) {
+          this.options.perlin.decay *=
+            this.options.perlin.decay - 0.2 > 0 ? 0.99 : 1.01;
+          if (this.options.perlin.waves != 20) {
+            this.options.perlin.waves = 20;
+          }
+        } else {
+          clearInterval(smooth);
+        }
+      }, 0.17);
+    }
+    if (
+      this.scrollPosition >= this.workPosition - 60 &&
+      this.scrollPosition < this.workPositionEnd
+    ) {
+      let smooth = setInterval(() => {
+        if (Math.abs(this.options.perlin.decay - 0.6) > 0.01) {
+          this.options.perlin.decay *=
+            this.options.perlin.decay - 0.6 > 0 ? 0.99 : 1.01;
+          if (this.options.perlin.waves != 20) {
+            this.options.perlin.waves = 20;
+          }
+        } else {
+          clearInterval(smooth);
+        }
+      }, 0.17);
+    }
+    if (this.scrollPosition >= this.contactPosition - 60) {
+      let smooth = setInterval(() => {
+        if (Math.abs(this.options.perlin.decay - 0.9) > 0.01) {
+          this.options.perlin.decay *=
+            this.options.perlin.decay - 0.9 > 0 ? 0.99 : 1.01;
+          if (this.options.perlin.waves != 4) {
+            this.options.perlin.waves = 4;
+          }
+        } else {
+          clearInterval(smooth);
+        }
+      }, 0.17);
+    }
+  }
 
-        this.camera.lookAt(this.scene.position);
-        this.renderer.render(this.scene, this.camera);
-      }
+  createPrimitive() {
+    let that = this;
 
-    
+    let primitiveElement = function() {
+      this.mesh = new THREE.Object3D();
+      that.mat = new THREE.ShaderMaterial({
+        wireframe: false,
+        //fog: true,
+        uniforms: {
+          time: {
+            type: "f",
+            value: 0.0
+          },
+          pointscale: {
+            type: "f",
+            value: 0.0
+          },
+          decay: {
+            type: "f",
+            value: 0.0
+          },
+          complex: {
+            type: "f",
+            value: 0.0
+          },
+          waves: {
+            type: "f",
+            value: 0.0
+          },
+          eqcolor: {
+            type: "f",
+            value: 0.0
+          },
+          fragment: {
+            type: "i",
+            value: true
+          },
+          redhell: {
+            type: "i",
+            value: true
+          }
+        },
+        vertexShader: vertexShader,
+        fragmentShader: fragmentShader
+      });
+      let geo = new THREE.IcosahedronBufferGeometry(3, 80);
+      let mesh = new THREE.Points(geo, that.mat);
 
-    
+      this.mesh.add(mesh);
+    };
+
+    this.primitive = new primitiveElement();
+    this.scene.add(this.primitive.mesh);
+  }
+  animation() {
+    requestAnimationFrame(() => this.animation());
+    this.performance = Date.now() * 0.003;
+
+    this.primitive.mesh.rotation.y += this.options.perlin.vel;
+    this.primitive.mesh.rotation.x =
+      (Math.sin(this.performance * this.options.spin.sinVel) *
+        this.options.spin.ampVel *
+        Math.PI) /
+      180;
+    //---
+    this.mat.uniforms["time"].value =
+      this.options.perlin.speed * (Date.now() - this.start);
+    this.mat.uniforms["pointscale"].value = this.options.perlin.perlins;
+    this.mat.uniforms["decay"].value = this.options.perlin.decay;
+    this.mat.uniforms["complex"].value = this.options.perlin.complex;
+    this.mat.uniforms["waves"].value = this.options.perlin.waves;
+    this.mat.uniforms["eqcolor"].value = this.options.perlin.eqcolor;
+    this.mat.uniforms["fragment"].value = this.options.perlin.fragment;
+    this.mat.uniforms["redhell"].value = this.options.perlin.redhell;
+    //---
+
+    this.camera.lookAt(this.scene.position);
+    this.renderer.render(this.scene, this.camera);
+  }
 }
 
 const sceneInit = (rootEl, options) => new SceneInit(rootEl, options);

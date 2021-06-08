@@ -23,9 +23,9 @@
             </div>
         </div>
 
-        <Project class="project0" 
-                pIndex="01" 
-                pName="Swon.ca" 
+        <Project class="project0"
+                pIndex="01"
+                pName="Swon.ca"
                 pRole="Brand Concept, Art & Creative Direction, Web Design, Web Development"
                 pLink="https://www.weijiefu.design/swon/"
                 :pArrow="true"
@@ -54,18 +54,25 @@
                  :pArrow="true"
         />
 
+           <Project pIndex="05"
+                 pName="Pride 2020"
+                 pRole="User Research, Augmented Reality, Prototype"
+                 pLink="https://www.weijiefu.design/pride2020/"
+                 :pArrow="true"
+        />
 
-         <Project pIndex="05"
+
+         <Project pIndex="99"
                  pName="Weijie's Dreamatorium"
                  pRole="Experimental Projects, Work In Progress, Creative Coding"
                  pLink="https://www.weijiefu.design/dreamatorium/"
                  :pArrow="true"
         />
-       
 
-        
 
-        
+
+
+
 
 
 
@@ -78,7 +85,7 @@ export default {
     components:{
         Project,
     }
-   
+
 }
 </script>
 <style scoped>
@@ -88,7 +95,7 @@ export default {
         width: 100vw;
 
         margin-bottom: 10rem;
-        
+
     }
     .title_fill{
         backdrop-filter: blur(10px) invert(10%);
@@ -100,7 +107,7 @@ export default {
     .project0{
         margin-top: 28rem;
     }
-    
+
     @media only screen and (max-width: 1000px) {
         .title_fill{
             transform: scale(1.8);
@@ -120,9 +127,9 @@ export default {
             transform: scale(1);
 
         }
-        
+
         .project0{
-            margin-top: 1rem !important; 
+            margin-top: 1rem !important;
     }
 }
 
