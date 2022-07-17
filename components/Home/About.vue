@@ -31,7 +31,7 @@
             <br />
 
             <div class="download">
-                  <a  href="https://drive.google.com/file/d/14reE9f7GT39abwH-7SAoy6GawM0FuOam/view?usp=sharing"
+                  <a  href="https://drive.google.com/file/d/1BDM3atxoO3YZVJ79eg4CpuAsVWg6JCQp/view?usp=sharing"
                       target="_blank">
                     download my resume
                 </a>
@@ -67,18 +67,18 @@
                 <br />
              </div>
         </div>
-        
+
     </div>
 </template>
 <script>
 export default {
-    
+
 }
 </script>
 <style scoped>
     .about {
         z-index: 101;
-        
+
         width: 100vw;
         color: var(--color-text-grey);
         font-family: 'Exo 2', sans-serif;
@@ -94,7 +94,7 @@ export default {
         transform: scale(2.5);
     }
     .about_chapter0{
-        margin-top: 28rem !important; 
+        margin-top: 28rem !important;
     }
 
     .about_chapter{
@@ -152,7 +152,7 @@ export default {
         margin-right: 2rem;
     }
     .about_chapter0{
-        margin-top: 18rem !important; 
+        margin-top: 18rem !important;
     }
 }
 
