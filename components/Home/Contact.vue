@@ -20,7 +20,7 @@
             </div>
             <div class="contact_chapter">
                 <div class="contact_chapter_title">
-                    I'm currently based in Amsterdam, the Netherlands, but always open to
+                    I'm currently based in London, but always open to
           the world. Feel free to contact me for a project request, or
           just a chat.
                 </div>
